@@ -42,7 +42,6 @@
   };
   $$('[data-draw]').forEach(svg => prep(svg, { skipFills: true }));
   $$('.ico').forEach(svg => prep(svg));
-  $$('.growth').forEach(svg => prep(svg, { skipFills: true }));
 
   /* reveal + draw on view */
   const io = new IntersectionObserver(es => es.forEach(e => {
@@ -95,9 +94,9 @@
       items[d.dataset.dot - 1].scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' })));
   }
 
-  /* process: the garden grows with the steps */
-  const grow = document.querySelector('[data-grow]');
-  if (grow) steps(grow, '[data-gstep]', 'data-gstep', n => { grow.dataset.g = n; });
+  /* process: the step in the middle of the screen fills its number */
+  const proc = document.querySelector('[data-steps]');
+  if (proc) steps(proc, '[data-gstep]', 'data-gstep', () => {});
 
   /* services accordion: the last panel you touched stays open */
   $$('[data-acc]').forEach(acc => {

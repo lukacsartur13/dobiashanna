@@ -24,7 +24,7 @@ export const SERVICE_KEYS = ['concept', 'planting', 'construction', 'visual'];
 
 const hu = {
   lang: 'hu', locale: 'hu_HU', other: 'en',
-  nav: { services: 'Szolgáltatások', about: 'Rólam', process: 'Folyamat', faq: 'GYIK', cta: 'Ajánlatkérés', menu: 'Menü', close: 'Bezár', skip: 'Ugrás a tartalomra' },
+  nav: { services: 'Szolgáltatások', about: 'Rólam', process: 'Munkafolyamat', faq: 'Kérdések', cta: 'Ajánlatkérés', menu: 'Menü', close: 'Bezár', skip: 'Ugrás a tartalomra' },
   brandSub: 'Kerttervezés',
   services: {
     concept:      { n: '01', title: 'Koncepcióterv', short: 'A kert váza: zónák, kapcsolatok, hangulat – még növények nélkül.' },
@@ -76,7 +76,8 @@ const hu = {
         ['ruler', 'Nincsenek arányhibák', 'Előre látod, mekkora lesz a terasz, hová fér a fa, és mennyi gyep marad a játékra. Nem a betonozás közben derül ki.'],
         ['coin', 'Kevesebb utólagos költség', 'A rossz helyre ültetett, rosszul választott növény a legdrágább kerti hiba. A terv a talajhoz, a fényhez és a gondozásra szánt idődhöz igazodik.'],
         ['sheet', 'Egyértelmű kivitelezés', 'A kivitelező – vagy akár te magad – pontos méretekkel, listákkal és rajzokkal dolgozhat. Kevesebb kérdés, kevesebb rögtönzés.'],
-        ['grow', 'Évről évre szebb', 'Egy átgondolt kert hosszú távon emeli az ingatlan használati és piaci értékét, és nem kell öt év múlva újrakezdeni.'],
+        ['grow', 'Piaci érték', 'Egy átgondolt kert hosszú távon emeli az ingatlan használati és piaci értékét, és nem kell öt év múlva újrakezdeni.'],
+        ['climate', 'Klímaadaptív növények', 'Olyan nemesített növények alkalmazása, amelyek képesek alkalmazkodni a megváltozott éghajlati körülményekhez, főként a globális felmelegedés okozta szélsőséges időjáráshoz. Kifejlődve kevesebb vízzel is beérik, így csökkenteni tudjuk az ökológiai lábnyomunkat.'],
       ],
     },
     stage: {
@@ -93,13 +94,14 @@ const hu = {
     servicesH: 'Szolgáltatások, amelyek <em>egymásra épülnek.</em>',
     servicesP: 'A tervtípusok külön is kérhetők, de együtt adják a legtöbbet. A felmérés után megmondom, melyikre van valóban szükséged – és melyikre nincs.',
     process: {
-      eyebrow: 'Folyamat',
-      h: 'Négy lépés, <em>semmi meglepetés.</em>',
+      eyebrow: 'Munkafolyamat',
+      h: 'Öt lépés, <em>semmi meglepetés.</em>',
       steps: [
         ['Ismerkedés és felmérés', 'Kimegyek a helyszínre, megnézzük a telket, a fényeket, a talajt és a meglévő növényeket. Közben arról beszélgetünk, hogyan szeretnéd használni a kertet – hétköznap és ünnepnap.'],
         ['Koncepció', 'Két-három irányt vázolok fel. Ezekből közösen választjuk ki és finomítjuk a véglegeset, amíg igazán a tiéd nem lesz.'],
         ['Részletes tervezés', 'Elkészülnek a szükséges tervlapok: ültetési, kiviteli és látványterv, anyag- és növénylistával. Mindent érthetően, magyarázattal adok át.'],
         ['Megvalósítás', 'A kész tervvel bármelyik kivitelező pontosan tud árazni és dolgozni. Igény esetén megbízható szakembereket ajánlok, és a kivitelezés alatt is elérhető vagyok.'],
+        ['Fenntartási tanácsok', 'A kész kerttel sem maradsz egyedül. Ha kéred, fenntartási tippeket is adok hozzá: mikor és mit metssz, mennyit öntözz, mire figyelj az első években – hogy a kert évről évre szebb legyen.'],
       ],
     },
     about: {
@@ -109,7 +111,7 @@ const hu = {
       link: 'Bővebben rólam', portrait: 'Ide kerül Hanna fotója',
     },
     faq: {
-      eyebrow: 'GYIK',
+      eyebrow: 'Kérdések',
       h: 'Gyakori <em>kérdések</em>',
       items: [
         ['Mennyibe kerül egy kertterv?', 'A tervezési díj a telek méretétől, a kért tervtípusoktól és a részletezettségtől függ. A helyszíni felmérés után pontos, írásos ajánlatot küldök – rejtett tételek nélkül.'],
@@ -208,7 +210,7 @@ const hu = {
     eyebrow: 'Ajánlatkérés',
     h1: 'Mesélj <em>a kertedről.</em>',
     lead: 'Nem kell pontosnak lenned – elég pár mondat. A részleteket a helyszíni bejáráson közösen nézzük át.',
-    f: { name: 'Neved', email: 'E-mail címed', phone: 'Telefonszám', city: 'Település', size: 'A kert mérete (kb. m²)', services: 'Mire van szükséged?', unsure: 'Még nem tudom', msg: 'Mesélj a kertről', msgPh: 'Mi van most a telken? Mit szeretnél benne csinálni? Van határidő?', gdpr: 'Elolvastam és elfogadom az adatkezelési tájékoztatót.', send: 'Elküldöm', note: 'Az űrlap a levelezőprogramodat nyitja meg az előre kitöltött üzenettel.', ok: 'Köszönöm! Megnyílt a leveleződ – csak nyomj a küldésre.' },
+    f: { name: 'Neved', email: 'E-mail címed', phone: 'Telefonszám', city: 'Település vagy pontos cím', cityHint: 'A pontos címmel műholdképen előre megnézem a telket – de a település is elég.', size: 'A kert mérete (kb. m²)', services: 'Mire van szükséged?', unsure: 'Még nem tudom', msg: 'Mesélj a kertről', msgPh: 'Mi van most a telken? Mit szeretnél benne csinálni? Van határidő?', gdpr: 'Elolvastam és elfogadom az adatkezelési tájékoztatót.', send: 'Elküldöm', note: 'Az űrlap a levelezőprogramodat nyitja meg az előre kitöltött üzenettel.', ok: 'Köszönöm! Megnyílt a leveleződ – csak nyomj a küldésre.' },
     next: { h: 'Mi történik <em>ezután?</em>', items: [['Két munkanapon belül válaszolok', 'Visszaírok vagy felhívlak, és tisztázunk pár alapkérdést.'], ['Helyszíni bejárás', 'Egyeztetünk egy időpontot, és együtt bejárjuk a kertet.'], ['Írásos, tételes ajánlat', 'Pontosan látod, mit kapsz, mennyiért és mikorra.']] },
     direct: 'Közvetlenül is elérsz',
   },
@@ -217,7 +219,7 @@ const hu = {
 
 const en = {
   lang: 'en', locale: 'en_GB', other: 'hu',
-  nav: { services: 'Services', about: 'About', process: 'Process', faq: 'FAQ', cta: 'Enquire', menu: 'Menu', close: 'Close', skip: 'Skip to content' },
+  nav: { services: 'Services', about: 'About', process: 'Process', faq: 'Questions', cta: 'Enquire', menu: 'Menu', close: 'Close', skip: 'Skip to content' },
   brandSub: 'Garden design',
   services: {
     concept:      { n: '01', title: 'Concept plan', short: 'The bones of the garden: zones, connections and mood – before a single plant.' },
@@ -269,7 +271,8 @@ const en = {
         ['ruler', 'No proportion mistakes', 'See in advance how big the terrace will be, where the tree fits and how much lawn is left for play. Not halfway through pouring concrete.'],
         ['coin', 'Fewer costs later', 'The wrong plant in the wrong place is the most expensive garden mistake. The plan fits your soil, your light and the time you want to spend.'],
         ['sheet', 'Clear construction', 'Your builder – or you yourself – can work from exact dimensions, lists and drawings. Fewer questions, less improvisation.'],
-        ['grow', 'Better every year', 'A well-planned garden raises the everyday and market value of your property, and you won’t need to start over in five years.'],
+        ['grow', 'Market value', 'A well-planned garden raises the everyday and market value of your property, and you won’t need to start over in five years.'],
+        ['climate', 'Climate-adaptive plants', 'Using bred cultivars that can adapt to the changed climate, above all to the extreme weather caused by global warming. Once established they make do with less water, which lowers our ecological footprint.'],
       ],
     },
     stage: {
@@ -287,12 +290,13 @@ const en = {
     servicesP: 'Each plan type can be ordered on its own, but together they give the most. After the survey I’ll tell you which ones you really need – and which you don’t.',
     process: {
       eyebrow: 'Process',
-      h: 'Four steps, <em>no surprises.</em>',
+      h: 'Five steps, <em>no surprises.</em>',
       steps: [
         ['Meeting & site survey', 'I visit the site and we look at the plot, the light, the soil and the existing plants. Meanwhile we talk about how you want to use the garden – on weekdays and holidays.'],
         ['Concept', 'I sketch two or three directions. Together we choose one and refine it until it truly feels like yours.'],
         ['Detailed design', 'The drawing sheets you need are produced: planting, construction and visualisation, with material and plant lists. Everything handed over clearly, with explanations.'],
         ['Realisation', 'With the finished plan any contractor can price and work precisely. If you like, I recommend reliable professionals and stay available during construction.'],
+        ['Maintenance tips', 'The finished garden doesn’t leave you on your own. If you like, I add maintenance tips: what to prune and when, how much to water, what to watch in the first years – so the garden gets better every year.'],
       ],
     },
     about: {
@@ -302,7 +306,7 @@ const en = {
       link: 'More about me', portrait: 'Hanna’s photo goes here',
     },
     faq: {
-      eyebrow: 'FAQ',
+      eyebrow: 'Questions',
       h: 'Frequently asked <em>questions</em>',
       items: [
         ['How much does a garden plan cost?', 'The design fee depends on the size of the plot, the plan types and the level of detail. After the site visit I send a precise written quote – no hidden items.'],
@@ -401,7 +405,7 @@ const en = {
     eyebrow: 'Enquiry',
     h1: 'Tell me <em>about your garden.</em>',
     lead: 'You don’t need to be precise – a few sentences are enough. We’ll go through the details together on the site visit.',
-    f: { name: 'Your name', email: 'Your email', phone: 'Phone', city: 'Town', size: 'Garden size (approx. m²)', services: 'What do you need?', unsure: 'Not sure yet', msg: 'Tell me about the garden', msgPh: 'What’s on the plot now? What would you like to do there? Is there a deadline?', gdpr: 'I have read and accept the privacy notice.', send: 'Send', note: 'The form opens your email app with a pre-filled message.', ok: 'Thank you! Your email app has opened – just press send.' },
+    f: { name: 'Your name', email: 'Your email', phone: 'Phone', city: 'Town or exact address', cityHint: 'With the exact address I can look at the plot on satellite imagery beforehand – but the town is enough.', size: 'Garden size (approx. m²)', services: 'What do you need?', unsure: 'Not sure yet', msg: 'Tell me about the garden', msgPh: 'What’s on the plot now? What would you like to do there? Is there a deadline?', gdpr: 'I have read and accept the privacy notice.', send: 'Send', note: 'The form opens your email app with a pre-filled message.', ok: 'Thank you! Your email app has opened – just press send.' },
     next: { h: 'What happens <em>next?</em>', items: [['I reply within two working days', 'I’ll write back or call to clarify a few basics.'], ['Site visit', 'We arrange a time and walk the garden together.'], ['Written, itemised quote', 'You see exactly what you get, for how much and by when.']] },
     direct: 'Reach me directly',
   },
@@ -424,9 +428,9 @@ Object.assign(hu.home, {
     { x: 420, y: 345, b: 'Gyep', s: '≈ 105 m²' },
   ],
   bento: { big: 'Egy telek.<br>Négy réteg.<br><em>Egy tervező.</em>', note: 'Minden tervlap ugyanarra az alapra épül – ezért illeszkedik egymáshoz minden részlet.' },
-  labels: ['Szemlélet', 'Rétegek', 'Szolgáltatások', 'Folyamat', 'Rólam', 'GYIK'],
+  labels: ['Szemlélet', 'Rétegek', 'Szolgáltatások', 'Munkafolyamat', 'Rólam', 'Kérdések'],
   whyLines: ['Egy jó terv', 'a legolcsóbb', '<em>kerti eszköz.</em>'],
-  growth: ['felmérés', 'koncepció', 'tervezés', 'kert'],
+  stepTags: ['felmérés', 'koncepció', 'tervezés', 'kert', 'gondozás'],
   cta: ['[0,00 · 0,00]', '[29,00 · 0,00]', '[0,00 · 26,00]', '[29,00 · 26,00]'],
 });
 
@@ -445,9 +449,9 @@ Object.assign(en.home, {
     { x: 420, y: 345, b: 'Lawn', s: '≈ 105 m²' },
   ],
   bento: { big: 'One plot.<br>Four layers.<br><em>One designer.</em>', note: 'Every sheet builds on the same base – which is why every detail fits together.' },
-  labels: ['Approach', 'Layers', 'Services', 'Process', 'About', 'FAQ'],
+  labels: ['Approach', 'Layers', 'Services', 'Process', 'About', 'Questions'],
   whyLines: ['A good plan is', 'the cheapest', '<em>garden tool.</em>'],
-  growth: ['survey', 'concept', 'design', 'garden'],
+  stepTags: ['survey', 'concept', 'design', 'garden', 'aftercare'],
   cta: ['[0.00 · 0.00]', '[29.00 · 0.00]', '[0.00 · 26.00]', '[29.00 · 26.00]'],
 });
 

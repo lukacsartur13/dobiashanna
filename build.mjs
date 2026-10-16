@@ -34,6 +34,11 @@ const btn = (href, label, { cls = '', g = 'arrow', attrs = '' } = {}) =>
   `<a class="btn ${cls}" href="${href}" ${attrs}><span class="btn__l">${label}</span>${ic(g)}</a>`;
 const lbl = (n, text) => `<p class="lbl" data-reveal><i></i>${n !== null ? `(${pad(n)}) ` : ''}${text}</p>`;
 const rich = s => s.replace(/\[\[(.+?)\]\]/g, `<mark class="scr">$1${S.SCRIBBLE}</mark>`);
+// Words too long for a phone-width display line get a soft hyphen at a correct break point.
+// (Browser hyphenation guesses Hungarian breaks wrong, so it is switched off in the CSS.)
+const SHY = { agglomerációban: 'agglomeráció&shy;ban', agglomeration: 'agglomer&shy;ation', Növénykiültetési: 'Növény&shy;kiültetési', mennyiségkimutatás: 'mennyiség&shy;kimutatás' };
+const SHY_RE = new RegExp(Object.keys(SHY).join('|'), 'g');
+const shy = html => html.replace(/>([^<]+)</g, (m, txt) => `>${txt.replace(SHY_RE, w => SHY[w])}<`); // text only, never attributes
 
 function header(t, key) {
   const L = k => link(t.lang, k);
@@ -149,7 +154,7 @@ function layout(t, key, body, { bodyClass = '', ctaO = {}, graph = [] } = {}) {
 <meta property="og:site_name" content="${SITE.name} – ${t.brandSub}">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [business(t), ...graph] })}</script>
-<meta name="theme-color" content="#F2EFE6">
+<meta name="theme-color" content="#D8CBB2">
 <link rel="icon" href="${a}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,7 +167,7 @@ ${DEFS}
 ${header(t, key)}
 <div class="page">
 <main id="main">
-${body}
+${shy(body)}
 </main>
 ${cta(t, ctaO)}
 </div>
@@ -234,9 +239,31 @@ ${S.band()}
   </div>
 </section>
 
+<section class="process sec sec--tint" id="folyamat" data-steps aria-labelledby="proc-h">
+  <div class="wrap process__grid">
+    <div class="process__l">
+      ${lbl(2, lab[3])}
+      <h2 class="display display--lg" id="proc-h" data-reveal>${h.process.h}</h2>
+      <div data-reveal>${btn(L('contact'), h.btn1)}</div>
+    </div>
+    <ol class="process__r">${h.process.steps.map(([ti, tx], i) => `<li class="gstep" data-gstep="${i + 1}" data-reveal><span class="gstep__n">${i + 1}</span><div><span class="mono">${pad(i + 1)} — ${h.stepTags[i]}</span><h3>${ti}</h3><p>${tx}</p></div></li>`).join('')}</ol>
+  </div>
+</section>
+
+<section class="svc sec" id="szolgaltatasok" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="svc__top">
+      ${lbl(3, lab[2])}
+      <h2 class="display display--lg" id="svc-h" data-reveal>${h.servicesH}</h2>
+      <p class="lead" data-reveal>${h.servicesP}</p>
+    </div>
+    ${accordion(t)}
+  </div>
+</section>
+
 <section class="stage sec--dark" data-stage data-active="1" aria-labelledby="stage-h">
   <div class="wrap stage__head">
-    ${lbl(2, lab[1])}
+    ${lbl(4, lab[1])}
     <h2 class="display display--lg" id="stage-h" data-reveal>${h.stage.h}</h2>
     <p class="lead" data-reveal>${h.stage.p}</p>
   </div>
@@ -252,29 +279,7 @@ ${S.band()}
   </div>
 </section>
 
-<section class="svc sec" id="szolgaltatasok" aria-labelledby="svc-h">
-  <div class="wrap">
-    <div class="svc__top">
-      ${lbl(3, lab[2])}
-      <h2 class="display display--lg" id="svc-h" data-reveal>${h.servicesH}</h2>
-      <p class="lead" data-reveal>${h.servicesP}</p>
-    </div>
-    ${accordion(t)}
-  </div>
-</section>
-
-${regionsBlock(t, null, 4, 'regiok')}
-
-<section class="process sec sec--tint" id="folyamat" data-grow data-g="1" aria-labelledby="proc-h">
-  <div class="wrap process__grid">
-    <div class="process__l">
-      ${lbl(5, lab[3])}
-      <h2 class="display display--lg" id="proc-h" data-reveal>${h.process.h}</h2>
-      <div class="growth-wrap">${S.PLUS4}${S.growth({ aria: h.process.h.replace(/<[^>]+>/g, ''), s: h.growth })}</div>
-    </div>
-    <ol class="process__r">${h.process.steps.map(([ti, tx], i) => `<li class="gstep" data-gstep="${i + 1}"><span class="gstep__n">${i + 1}</span><div><span class="mono">${pad(i + 1)} — ${h.growth[i]}</span><h3>${ti}</h3><p>${tx}</p></div></li>`).join('')}</ol>
-  </div>
-</section>
+${regionsBlock(t, null, 5, 'regiok')}
 
 <section class="about-t sec" aria-labelledby="about-h">
   <div class="wrap about-t__grid">
@@ -549,7 +554,7 @@ ${S.band()}
 
 function contact(t) {
   const c = t.contact, f = c.f;
-  const field = (n, l, type = 'text', req = false, extra = '') => `<label class="fld"><span class="mono">${l}${req ? ' *' : ''}</span><input name="${n}" type="${type}"${req ? ' required' : ''} ${extra}></label>`;
+  const field = (n, l, type = 'text', req = false, extra = '', hint = '') => `<label class="fld"><span class="mono">${l}${req ? ' *' : ''}</span><input name="${n}" type="${type}"${req ? ' required' : ''} ${extra}>${hint ? `<small class="fld__hint">${hint}</small>` : ''}</label>`;
   return layout(t, 'contact', `
 <section class="shero">
   <div class="wrap contact__grid">
@@ -570,7 +575,7 @@ function contact(t) {
     <form class="form" data-form data-to="${SITE.email}" data-ok="${f.ok}" novalidate>
       ${S.PLUS4}
       <div class="form__row">${field('name', f.name, 'text', true, 'autocomplete="name"')}${field('email', f.email, 'email', true, 'autocomplete="email"')}</div>
-      <div class="form__row">${field('phone', f.phone, 'tel', false, 'autocomplete="tel"')}${field('city', f.city, 'text', false, 'autocomplete="address-level2"')}</div>
+      <div class="form__row">${field('phone', f.phone, 'tel', false, 'autocomplete="tel"')}${field('city', f.city, 'text', false, '', f.cityHint)}</div>
       ${field('size', f.size, 'number', false, 'min="0" inputmode="numeric"')}
       <fieldset class="chips"><legend class="mono">${f.services}</legend>
         ${SERVICE_KEYS.map(k => `<label><input type="checkbox" name="services" value="${t.services[k].title}"><span>${t.services[k].title}</span></label>`).join('')}
@@ -598,7 +603,7 @@ for (const lang of ['hu', 'en']) {
 }
 // ------------------------------------------------------------------ AI-READABLE FILES
 // llms.txt: a linked index (llmstxt.org). llms-full.txt: the whole site as plain Markdown.
-const plain = x => String(x).replace(/<br\s*\/?>/g, ' ').replace(/<[^>]+>/g, '').replace(/\[\[(.+?)\]\]/g, '$1').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+const plain = x => String(x).replace(/<br\s*\/?>/g, ' ').replace(/<[^>]+>/g, '').replace(/\[\[(.+?)\]\]/g, '$1').replace(/&nbsp;/g, ' ').replace(/&shy;/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 const li = (lang, key, name, desc) => `- [${plain(name)}](${url(lang, key)}): ${plain(desc)}`;
 const areaLine = t => REGION_KEYS.map(k => t[k].name).join(', ');
 

@@ -204,6 +204,7 @@ export const ICON = {
   coin: `<svg viewBox="0 0 48 48" class="ico" aria-hidden="true"><ellipse cx="24" cy="14" rx="14" ry="6"/><path d="M10 14 V24 C10 27.3 16.3 30 24 30 C31.7 30 38 27.3 38 24 V14"/><path d="M10 24 V34 C10 37.3 16.3 40 24 40 C31.7 40 38 37.3 38 34 V24"/></svg>`,
   sheet: `<svg viewBox="0 0 48 48" class="ico" aria-hidden="true"><rect x="9" y="6" width="30" height="36"/><path d="M15 14 H33 M15 20 H33 M15 26 H26"/><path d="M27 31 L31 36 L39 26"/></svg>`,
   grow: `<svg viewBox="0 0 48 48" class="ico" aria-hidden="true"><path d="M6 42 H42"/><path d="M24 42 V18"/><path d="M24 26 C 14 26 10 18 10 12 C 18 12 24 16 24 26 Z"/><path d="M24 20 C 32 20 38 14 38 7 C 30 7 24 12 24 20 Z"/></svg>`,
+  climate: `<svg viewBox="0 0 48 48" class="ico" aria-hidden="true"><path d="M10 31 V10 A4 4 0 0 1 18 10 V31 A7 7 0 1 1 10 31 Z"/><path d="M14 34 V16"/><path d="M18 14 H21 M18 20 H21 M18 26 H21"/><path d="M27 42 C 26 30 32 21 44 18 C 45 31 38 40 27 42 Z"/><path d="M27 42 L39 25"/></svg>`,
   arrow: `<svg viewBox="0 0 24 24" class="ico-arw" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18"/></svg>`,
 };
 
@@ -419,45 +420,6 @@ export const PILL = `<span class="pill" aria-hidden="true"><svg viewBox="0 0 170
 // Hand-drawn loop around a key word.
 export const SCRIBBLE = '<svg class="scr__svg" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M14 38 C 26 10 150 2 186 22 C 206 36 172 58 100 58 C 36 58 2 46 10 28 C 16 14 66 6 128 9"/></svg>';
 
-// Process: a garden growing in four stages, in elevation.
-export function growth(t) {
-  const ruler = Array.from({ length: 18 }, (_, i) => `<line class="ln-hair" x1="${i % 4 ? 46 : 40}" y1="${400 - i * 20}" x2="52" y2="${400 - i * 20}"/>`).join('');
-  const rl = [0, 1, 2, 3].map(i => `<text class="t t-xs" x="34" y="${403 - i * 80}" text-anchor="end">${i} m</text>`).join('');
-  const leaf = (x, y, s, l, w) => `<path class="leaf fl" d="M${x} ${y} C ${x + s * l * .3} ${y - w} ${x + s * l * .8} ${y - w} ${x + s * l} ${y - w * .5} C ${x + s * l * .8} ${y + w * .2} ${x + s * l * .3} ${y + w * .2} ${x} ${y} Z"/><path class="ln-thin" d="M${x} ${y} C ${x + s * l * .3} ${y - w} ${x + s * l * .8} ${y - w} ${x + s * l} ${y - w * .5} C ${x + s * l * .8} ${y + w * .2} ${x + s * l * .3} ${y + w * .2} ${x} ${y} Z"/>`;
-  const tag = (y, n, txt) => `<g class="g-tag"><line class="dim-ln" x1="330" y1="${y}" x2="360" y2="${y}"/><text class="t t-b" x="366" y="${y + 3}">${n}</text><text class="t t-xs" x="366" y="${y + 16}">${txt}</text></g>`;
-  return `<svg class="growth" viewBox="0 0 440 480" role="img" aria-label="${t.aria}">
-    <rect class="soil" x="60" y="400" width="300" height="56"/>
-    <line class="ln-bold" x1="60" y1="400" x2="360" y2="400"/>
-    <line class="ln-thin" x1="52" y1="60" x2="52" y2="400"/>${ruler}${rl}
-    <g class="gx g1">
-      <path class="ln-thin" stroke-dasharray="3 4" d="M150 400 A 60 22 0 0 0 270 400"/>
-      <ellipse class="seed fl" cx="210" cy="420" rx="7" ry="4.5"/><ellipse class="ln-thin" cx="210" cy="420" rx="7" ry="4.5"/>
-      <path class="ln" d="M110 400 V 318"/><path class="flag fl" d="M110 318 L140 326 L110 334 Z"/><path class="ln-thin" d="M110 318 L140 326 L110 334 Z"/>
-      <path class="ln-thin" stroke-dasharray="5 4" d="M110 360 C 170 352 250 352 312 360"/><path class="ln" d="M312 400 V 340"/>
-      ${tag(330, '01', t.s[0])}
-    </g>
-    <g class="gx g2">
-      <path class="ln" d="M210 400 C 208 386 212 372 210 356"/>
-      ${leaf(210, 360, -1, 30, 12)}${leaf(210, 364, 1, 28, 11)}
-      ${tag(350, '02', t.s[1])}
-    </g>
-    <g class="gx g3">
-      <path class="ln" d="M210 400 C 206 350 214 300 210 240"/><path class="ln-thin" d="M232 400 V 270"/><path class="ln-hair" d="M210 300 L232 296 M210 330 L232 328"/>
-      ${leaf(210, 360, -1, 44, 15)}${leaf(211, 330, 1, 42, 14)}${leaf(209, 296, -1, 38, 13)}${leaf(210, 266, 1, 32, 11)}${leaf(210, 244, -1, 24, 9)}
-      ${tag(240, '03', t.s[2])}
-    </g>
-    <g class="gx g4">
-      <path class="ln-bold" d="M210 400 C 206 340 214 280 208 214 M208 270 C 190 250 178 232 172 210 M209 248 C 230 228 244 210 250 188"/>
-      <path class="canopy fl" d="M118 190 C 100 130 140 76 206 72 C 276 68 316 118 304 178 C 296 222 252 232 208 226 C 160 234 128 224 118 190 Z"/>
-      <path class="ln" d="M118 190 C 100 130 140 76 206 72 C 276 68 316 118 304 178 C 296 222 252 232 208 226 C 160 234 128 224 118 190 Z"/>
-      <path class="shrub fl" d="M88 400 C 76 380 92 360 112 364 C 130 358 146 378 136 400 Z"/><path class="ln-thin" d="M88 400 C 76 380 92 360 112 364 C 130 358 146 378 136 400 Z"/>
-      <path class="shrub fl" d="M276 400 C 266 384 280 368 298 372 C 316 368 328 386 320 400 Z"/><path class="ln-thin" d="M276 400 C 266 384 280 368 298 372 C 316 368 328 386 320 400 Z"/>
-      <circle class="pd pd--blush" cx="150" cy="392" r="4"/><circle class="pd pd--violet" cx="164" cy="396" r="3.5"/><circle class="pd pd--pollen" cx="256" cy="393" r="4"/><circle class="pd pd--violet" cx="244" cy="397" r="3"/>
-      ${tag(80, '04', t.s[3])}
-    </g>
-  </svg>`;
-}
-
 // ---------------------------------------------------------- REGION ICONS
 Object.assign(ICON, {
   wind: `<svg viewBox="0 0 48 48" class="ico" aria-hidden="true"><path d="M6 18 H30 C35 18 37 12 32 10 C28 9 26 12 27 14"/><path d="M6 26 H38 C43 26 44 33 39 34 C35 35 33 32 34 30"/><path d="M6 34 H22"/></svg>`,
@@ -536,7 +498,7 @@ const MAPS = {
 
 export function regionMap(key, t, { mini = false } = {}) {
   const m = MAPS[key]();
-  return `<svg class="rmap${mini ? ' rmap--mini' : ''}" viewBox="0 0 600 440" ${mini ? 'aria-hidden="true"' : `role="img" aria-label="${t.aria}"`}${mini ? '' : ' data-draw'}>
+  return `<svg class="rmap${mini ? ' rmap--mini' : ''}" viewBox="0 0 600 440" ${mini ? 'preserveAspectRatio="xMidYMid slice" aria-hidden="true"' : `role="img" aria-label="${t.aria}"`}${mini ? '' : ' data-draw'}>
     <defs><clipPath id="rm-${key}${mini ? '-m' : ''}"><rect x="10" y="10" width="580" height="384"/></clipPath></defs>
     <rect class="paper-bg nd" x="0" y="0" width="600" height="440"/>
     <g clip-path="url(#rm-${key}${mini ? '-m' : ''})">${m.art}</g>
