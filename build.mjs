@@ -200,7 +200,7 @@ function home(t) {
       <h1 class="lbl"><i></i>${h.seoH1}</h1>${h.meta.map(m => `<span>${m}</span>`).join('')}
     </div>
     <div class="hero__ph">
-      <img src="${asset(t.lang)}img/kert-hero.jpg" alt="${h.photoAlt}" width="1103" height="624" fetchpriority="high">
+      <img src="${asset(t.lang)}img/kert-hero.jpg" alt="${h.photoAlt}" width="1280" height="640" fetchpriority="high">
       <p class="display hero__h">${h.h1}</p>
     </div>
     <div class="hero__grid">
