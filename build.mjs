@@ -17,6 +17,8 @@ const link = (lang, key, from = lang) => {
 const asset = lang => (lang === 'en' ? '../assets/' : 'assets/');
 const url = (lang, key) => `${SITE.domain}/${lang === 'en' ? 'en/' : ''}${PAGES[key][lang] === 'index.html' ? '' : PAGES[key][lang]}`;
 const pad = n => String(n).padStart(2, '0');
+// The address is long: let it break before the @ instead of forcing its column wider.
+const MAIL = SITE.email.replace('@', '<wbr>@');
 
 // ------------------------------------------------------------ THE HOVER ICON SYSTEM
 // Every interactive icon is a chip holding two copies of its glyph in a one-line mask:
@@ -73,7 +75,7 @@ function header(t, key) {
     <li><a href="${L('about')}"><span class="mono">05</span>${t.nav.about}</a></li>
     <li><a href="${L('contact')}"><span class="mono">06</span>${t.nav.cta}</a></li>
   </ol>
-  <p class="menu__foot mono"><a href="tel:${SITE.phoneHref}">${SITE.phone}</a> · <a href="mailto:${SITE.email}">${SITE.email}</a></p>
+  <p class="menu__foot mono"><a href="tel:${SITE.phoneHref}">${SITE.phone}</a> · <a href="mailto:${SITE.email}">${MAIL}</a></p>
 </div>`;
 }
 
@@ -111,7 +113,7 @@ function footer(t) {
     </div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.pages}</p><ul>${SERVICE_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t.services[k].title}</a></li>`).join('')}<li><a class="ulink" href="${L('about')}">${t.nav.about}</a></li><li><a class="ulink" href="${L('contact')}">${t.nav.cta}</a></li></ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.regionsUI.label}</p><ul>${REGION_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t[k].name}</a></li>`).join('')}</ul></div>
-    <div class="ftr__col"><p class="lbl"><i></i>${t.footer.contact}</p><ul><li><a class="ulink" href="tel:${SITE.phoneHref}">${SITE.phone}</a></li><li><a class="ulink" href="mailto:${SITE.email}">${SITE.email}</a></li></ul></div>
+    <div class="ftr__col"><p class="lbl"><i></i>${t.footer.contact}</p><ul><li><a class="ulink" href="tel:${SITE.phoneHref}">${SITE.phone}</a></li><li><a class="ulink" href="mailto:${SITE.email}">${MAIL}</a></li></ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.follow}</p><ul><li><a class="ulink" href="${SITE.instagram}" rel="noopener">Instagram</a></li><li><a class="ulink" href="${SITE.facebook}" rel="noopener">Facebook</a></li></ul></div>
   </div>
   <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name} ${t.brandSub}. ${t.footer.legal}</span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
@@ -303,7 +305,7 @@ ${regionsBlock(t, null, 5, 'regiok')}
       <h2 class="display display--lg" id="about-h" data-reveal>${h.about.h}</h2>
       <p class="body-l" data-reveal>${h.about.p[1]}</p>
       <div data-reveal>${btn(L('about'), h.about.link, { cls: 'btn--ghost' })}</div>
-      <dl class="tcard" data-reveal>${S.PLUS4}${t.card.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+      <dl class="tcard" data-reveal>${S.PLUS4}${t.card.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v === SITE.email ? MAIL : v}</dd></div>`).join('')}</dl>
     </div>
   </div>
 </section>
@@ -544,7 +546,7 @@ function about(t) {
       <h1 class="display shero__h"><span class="indent" aria-hidden="true"></span>${a.h1}</h1>
       <p class="shero__tag"><em>${a.lead}</em></p>
       ${a.p.map((p, i) => `<p class="body-l${i === 0 ? ' dropcap' : ''}">${p}</p>`).join('')}
-      <dl class="tcard">${S.PLUS4}${t.card.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+      <dl class="tcard">${S.PLUS4}${t.card.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v === SITE.email ? MAIL : v}</dd></div>`).join('')}</dl>
     </div>
   </div>
 </section>
@@ -580,7 +582,7 @@ function contact(t) {
       <div class="direct">
         <p class="lbl"><i></i>${c.direct}</p>
         <a class="direct__a hov" href="tel:${SITE.phoneHref}">${ic('phone')}<span>${SITE.phone}</span></a>
-        <a class="direct__a hov" href="mailto:${SITE.email}">${ic('mail')}<span>${SITE.email}</span></a>
+        <a class="direct__a hov" href="mailto:${SITE.email}">${ic('mail')}<span>${MAIL}</span></a>
       </div>
     </div>
     <form class="form" data-form data-to="${SITE.email}" data-ok="${f.ok}" novalidate>

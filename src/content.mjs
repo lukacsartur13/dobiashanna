@@ -5,7 +5,7 @@ export const SITE = {
   designer: { hu: 'Dóbiás Hanna', en: 'Hanna Dóbiás' },
   phone: '+36 20 591 2651',
   phoneHref: '+36205912651',
-  email: 'hello@dobiashanna.hu',     // TODO: valódi e-mail cím
+  email: 'honeygarden.tervezes@gmail.com',
   instagram: 'https://instagram.com/', // TODO
   facebook: 'https://facebook.com/',   // TODO
   domain: 'https://honeygarden.hu',

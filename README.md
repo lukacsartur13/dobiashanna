@@ -38,7 +38,7 @@ node build.mjs
 
 ## Élesítés előtt kitöltendő
 
-- `src/content.mjs` → `SITE`: e-mail, Instagram, Facebook, végleges domain (a név és a telefonszám már a végleges)
+- `src/content.mjs` → `SITE`: Instagram és Facebook link (a név, a telefonszám, az e-mail és a domain már a végleges)
 - A hero-fotó (`assets/img/kert-hero.jpg`) csak 1103 px széles; nagy kijelzőn egy legalább 2400 px-es változat élesebb lenne
 - Az átfutási idők a GYIK-ben (2–3 hét / 4–8 hét) minta-értékek
 - Adatkezelési tájékoztató oldal (az űrlap hivatkozik rá)

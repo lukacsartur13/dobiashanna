@@ -795,6 +795,8 @@ details[open] .ic--pm::before{transform:none}
 
 /* §12 ------------------------------------------------------------ responsive */
 @media (max-width:1180px){
+  .ftr__grid{grid-template-columns:repeat(4,1fr)}
+  .ftr__brand{grid-column:1/-1}
   .hdr__cta{display:none} /* the nav keeps its place until the burger takes over */
   .hero__side{grid-column:1/6}.sheet{grid-column:6/13}
   .bento{grid-template-columns:repeat(2,1fr)}
