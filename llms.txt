@@ -2,7 +2,7 @@
 
 > Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.
 > Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.
-> +36 20 591 2651 — hello@dobiashanna.hu — https://dobiashanna.hu
+> +36 20 591 2651 — hello@dobiashanna.hu — https://honeygarden.hu
 
 A HoneyGarden kerttervezés Dóbiás Hanna kerttervező műhelye: egyedi kertterveket készít családi házakhoz, nyaralókhoz és kisebb közösségi terekhez. Négy tervtípus kérhető külön vagy együtt: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. Helyszíni bejárással dolgozik a következő régiókban: Győr és Győr-Moson-Sopron, Budapest és agglomeráció, Balaton környéke; online konzultációval az ország bármely részén. A tervezési díj egyedi, a helyszíni bejárás után írásos, tételes ajánlatban rögzül – fix árlista nincs. Ajánlatkérés az ajánlatkérő oldalon, e-mailben vagy telefonon.
 
@@ -12,43 +12,43 @@ A honlap két nyelvű: magyarul a gyökérben, angolul az /en/ alatt. The site i
 
 ## Szolgáltatások
 
-- [Koncepcióterv](https://dobiashanna.hu/koncepcioterv.html): Koncepcióterv: funkcionális zónák, térkapcsolatok, közlekedés és hangulat – a kert váza, amire minden további terv épül.
-- [Növénykiültetési terv](https://dobiashanna.hu/novenykiultetesi-terv.html): Növénykiültetési terv fajra, fajtára és darabszámra pontosan: virágzási naptár, növénylista, ültetési távolságok és gondozási útmutató.
-- [Kiviteli kertterv](https://dobiashanna.hu/kiviteli-kertterv.html): Kiviteli kertterv: kitűzési, burkolati, szint- és lejtésterv, metszetek, részletrajzok és anyagkimutatás – pontos alap a kivitelezéshez.
-- [3D látványterv](https://dobiashanna.hu/3d-latvanyterv.html): 3D kerttervezés és látványterv: valósághű nézetek, anyag- és színváltozatok, évszakos hangulatképek a kivitelezés előtt.
+- [Koncepcióterv](https://honeygarden.hu/koncepcioterv.html): Koncepcióterv: funkcionális zónák, térkapcsolatok, közlekedés és hangulat – a kert váza, amire minden további terv épül.
+- [Növénykiültetési terv](https://honeygarden.hu/novenykiultetesi-terv.html): Növénykiültetési terv fajra, fajtára és darabszámra pontosan: virágzási naptár, növénylista, ültetési távolságok és gondozási útmutató.
+- [Kiviteli kertterv](https://honeygarden.hu/kiviteli-kertterv.html): Kiviteli kertterv: kitűzési, burkolati, szint- és lejtésterv, metszetek, részletrajzok és anyagkimutatás – pontos alap a kivitelezéshez.
+- [3D látványterv](https://honeygarden.hu/3d-latvanyterv.html): 3D kerttervezés és látványterv: valósághű nézetek, anyag- és színváltozatok, évszakos hangulatképek a kivitelezés előtt.
 
 ## Kerttervezés régiónként
 
-- [Kerttervezés Győrben és Győr-Moson-Sopron megyében](https://dobiashanna.hu/kerttervezes-gyor.html): Egyedi kerttervezés Győrben és Győr-Moson-Sopron megyében: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv családi házakhoz.
-- [Kerttervezés Budapesten és az agglomerációban](https://dobiashanna.hu/kerttervezes-budapest.html): Egyedi kerttervezés Budapesten és az agglomerációban: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv modern családi házakhoz.
-- [Kerttervezés a Balaton környékén](https://dobiashanna.hu/kerttervezes-balaton.html): Egyedi kerttervezés a Balaton környékén nyaralókhoz és második otthonokhoz: kevés gondozást igénylő, látványos kertek koncepciótervtől a 3D látványtervig.
+- [Kerttervezés Győrben és Győr-Moson-Sopron megyében](https://honeygarden.hu/kerttervezes-gyor.html): Egyedi kerttervezés Győrben és Győr-Moson-Sopron megyében: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv családi házakhoz.
+- [Kerttervezés Budapesten és az agglomerációban](https://honeygarden.hu/kerttervezes-budapest.html): Egyedi kerttervezés Budapesten és az agglomerációban: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv modern családi házakhoz.
+- [Kerttervezés a Balaton környékén](https://honeygarden.hu/kerttervezes-balaton.html): Egyedi kerttervezés a Balaton környékén nyaralókhoz és második otthonokhoz: kevés gondozást igénylő, látványos kertek koncepciótervtől a 3D látványtervig.
 
 ## Oldalak
 
-- [Kerttervezés Győr, Budapest, Balaton](https://dobiashanna.hu/): Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.
-- [Rólam – Dóbiás Hanna](https://dobiashanna.hu/rolam.html): Dóbiás Hanna kerttervező: személyes, átlátható tervezés, a kert használóiból kiindulva.
-- [Ajánlatkérés](https://dobiashanna.hu/ajanlatkeres.html): Kérj ajánlatot kerttervezésre: pár mondat a kertedről, és két munkanapon belül jelentkezem.
+- [Kerttervezés Győr, Budapest, Balaton](https://honeygarden.hu/): Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.
+- [Rólam – Dóbiás Hanna](https://honeygarden.hu/rolam.html): Dóbiás Hanna kerttervező: személyes, átlátható tervezés, a kert használóiból kiindulva.
+- [Ajánlatkérés](https://honeygarden.hu/ajanlatkeres.html): Kérj ajánlatot kerttervezésre: pár mondat a kertedről, és két munkanapon belül jelentkezem.
 
 ## English: services
 
-- [Concept plan](https://dobiashanna.hu/en/concept-plan.html): Concept plan: functional zones, spatial relationships, circulation and mood – the framework every further plan builds on.
-- [Planting plan](https://dobiashanna.hu/en/planting-plan.html): Planting plan accurate to species, cultivar and quantity: flowering calendar, plant list, spacing and aftercare guide.
-- [Construction plan](https://dobiashanna.hu/en/construction-plan.html): Garden construction drawings: setting-out, paving, levels and drainage, sections, details and bill of quantities – a precise basis for building.
-- [3D visualisation](https://dobiashanna.hu/en/3d-visualisation.html): 3D garden design and visualisation: realistic views, material and colour options, seasonal mood images before construction.
+- [Concept plan](https://honeygarden.hu/en/concept-plan.html): Concept plan: functional zones, spatial relationships, circulation and mood – the framework every further plan builds on.
+- [Planting plan](https://honeygarden.hu/en/planting-plan.html): Planting plan accurate to species, cultivar and quantity: flowering calendar, plant list, spacing and aftercare guide.
+- [Construction plan](https://honeygarden.hu/en/construction-plan.html): Garden construction drawings: setting-out, paving, levels and drainage, sections, details and bill of quantities – a precise basis for building.
+- [3D visualisation](https://honeygarden.hu/en/3d-visualisation.html): 3D garden design and visualisation: realistic views, material and colour options, seasonal mood images before construction.
 
 ## English: garden design by region
 
-- [Garden design in Győr and Győr-Moson-Sopron county](https://dobiashanna.hu/en/garden-design-gyor.html): Bespoke garden design in Győr and Győr-Moson-Sopron county: concept plan, planting plan, construction drawings and 3D visualisation for family homes.
-- [Garden design in Budapest and its surroundings](https://dobiashanna.hu/en/garden-design-budapest.html): Bespoke garden design in Budapest and its agglomeration: concept plan, planting plan, construction drawings and 3D visualisation for modern family homes.
-- [Garden design around Lake Balaton](https://dobiashanna.hu/en/garden-design-lake-balaton.html): Bespoke garden design around Lake Balaton for holiday and second homes: striking, low-maintenance gardens from concept plan to 3D visualisation.
+- [Garden design in Győr and Győr-Moson-Sopron county](https://honeygarden.hu/en/garden-design-gyor.html): Bespoke garden design in Győr and Győr-Moson-Sopron county: concept plan, planting plan, construction drawings and 3D visualisation for family homes.
+- [Garden design in Budapest and its surroundings](https://honeygarden.hu/en/garden-design-budapest.html): Bespoke garden design in Budapest and its agglomeration: concept plan, planting plan, construction drawings and 3D visualisation for modern family homes.
+- [Garden design around Lake Balaton](https://honeygarden.hu/en/garden-design-lake-balaton.html): Bespoke garden design around Lake Balaton for holiday and second homes: striking, low-maintenance gardens from concept plan to 3D visualisation.
 
 ## English: pages
 
-- [Garden Design in Győr, Budapest & Lake Balaton](https://dobiashanna.hu/en/): Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.
-- [About Hanna Dóbiás](https://dobiashanna.hu/en/about.html): Hanna Dóbiás, garden designer: personal, transparent design that starts from the people who use the garden.
-- [Enquiry](https://dobiashanna.hu/en/enquiry.html): Request a garden design quote: a few lines about your garden, and I’ll get back to you within two working days.
+- [Garden Design in Győr, Budapest & Lake Balaton](https://honeygarden.hu/en/): Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.
+- [About Hanna Dóbiás](https://honeygarden.hu/en/about.html): Hanna Dóbiás, garden designer: personal, transparent design that starts from the people who use the garden.
+- [Enquiry](https://honeygarden.hu/en/enquiry.html): Request a garden design quote: a few lines about your garden, and I’ll get back to you within two working days.
 
 ## Optional
 
-- [llms-full.txt](https://dobiashanna.hu/llms-full.txt): A honlap teljes szövege Markdownban (HU + EN) / Full site text in Markdown
-- [sitemap.xml](https://dobiashanna.hu/sitemap.xml): Minden oldal URL-je / Every page URL
+- [llms-full.txt](https://honeygarden.hu/llms-full.txt): A honlap teljes szövege Markdownban (HU + EN) / Full site text in Markdown
+- [sitemap.xml](https://honeygarden.hu/sitemap.xml): Minden oldal URL-je / Every page URL

@@ -8,7 +8,7 @@ export const SITE = {
   email: 'hello@dobiashanna.hu',     // TODO: valódi e-mail cím
   instagram: 'https://instagram.com/', // TODO
   facebook: 'https://facebook.com/',   // TODO
-  domain: 'https://dobiashanna.hu',    // TODO: végleges domain
+  domain: 'https://honeygarden.hu',
 };
 
 export const PAGES = {

@@ -26,5 +26,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Site summary for language models: https://dobiashanna.hu/llms.txt
-Sitemap: https://dobiashanna.hu/sitemap.xml
+# Site summary for language models: https://honeygarden.hu/llms.txt
+Sitemap: https://honeygarden.hu/sitemap.xml

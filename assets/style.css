@@ -428,10 +428,10 @@ details[open] .ic--pm::before{transform:none}
 .about-t__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap)}
 .about-t__l{grid-column:1/6}
 .about-t__intro{max-width:24em}
-.about-t__art{margin-top:clamp(40px,8vw,128px);max-width:420px}
+.about-t__art{margin-top:clamp(40px,8vw,128px)}
 .about-t__r{grid-column:7/13;padding-top:clamp(40px,10vw,160px)}
 .about-t__r .btn{margin:1rem 0 3rem}
-.arch{width:100%;max-width:440px}
+.arch{width:100%}
 .arch-bg{fill:var(--paper-2)}
 .arch-in{stroke:var(--paper-hi);opacity:.8}
 .scr{position:relative;background:none;color:var(--ink);white-space:nowrap}
@@ -706,6 +706,8 @@ details[open] .ic--pm::before{transform:none}
 .ab-hero{padding-top:calc(var(--hdr) + clamp(32px,5vw,72px))}
 .ab-hero__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);align-items:start}
 .ab-hero__art{grid-column:1/6;position:sticky;top:calc(var(--hdr) + 24px)}
+/* fills its column, but shrinks on short laptop screens so the stuck portrait stays whole (never below the old 440px) */
+.ab-hero__art .arch{max-width:max(440px,calc((100vh - var(--hdr) - 48px) * .77))}
 .ab-hero__copy{grid-column:7/13}
 .ab-hero__copy .tcard{margin-top:2.4rem}
 .dropcap::first-letter{font-family:var(--f-serif);font-size:4.2em;float:left;line-height:.8;margin:.06em .1em 0 0;color:var(--moss)}
@@ -846,7 +848,7 @@ details[open] .ic--pm::before{transform:none}
   .acc__ico,.acc__p.is-open .acc__ico{transform:none}
   .acc__body{width:auto;opacity:1;transform:none;pointer-events:auto}
   .about-t__r{padding-top:2rem}
-  .about-t__art{margin-top:2rem;max-width:320px}
+  .about-t__art{margin-top:2rem;max-width:440px}
   .faq__a{padding-left:0;padding-right:0}
   .faq summary{grid-template-columns:40px 1fr auto}
   .who__grid,.steps3,.values{grid-template-columns:1fr}
@@ -857,7 +859,7 @@ details[open] .ic--pm::before{transform:none}
   .ftr{position:relative}
   .ftr__grid{grid-template-columns:1fr 1fr}
   .ftr__brand{grid-column:1/-1}
-  .ab-hero__art{max-width:340px}
+  .ab-hero__art{max-width:440px}
   .cta__row{grid-template-columns:1fr}
   .cta__art{width:70vw;margin-top:-35vw;right:-20vw}
   .shero__meta{flex-wrap:wrap}
