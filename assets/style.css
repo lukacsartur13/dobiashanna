@@ -932,6 +932,17 @@ details[open] .ic--pm::before{transform:none}
   .tcard>div:last-of-type{border-bottom:0!important}
   .rsvc,.steps3--4{grid-template-columns:1fr}
 }
+@media (max-width:480px){
+  /* phone header: logo, language switch and the burger must fit, whichever label it shows */
+  .hdr{gap:.75rem}
+  .hdr__end{gap:.6rem}
+  .brand__logo{height:40px}
+  .brand__sub{padding-left:.5rem;font-size:.72rem}
+  .lang a{padding:.35rem .55rem}
+  .burger{position:relative}
+  .burger .mono{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+}
+@media (max-width:350px){.brand__sub{display:none}}
 @media (hover:none){.sheet figcaption{display:none}.cur{display:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0ms!important;scroll-behavior:auto!important}
