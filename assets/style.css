@@ -833,7 +833,9 @@ details[open] .ic--pm::before{transform:none}
   .gstep{padding-block:2rem}
   .process__l .btn{display:none}
   .stage__body{display:block}
-  .stage__view{position:sticky;top:var(--hdr);z-index:1;background:var(--night);padding-block:8px 0}
+  .stage__view{position:sticky;top:var(--hdr);z-index:1;background:var(--night);padding-block:8px 0;transition:top .6s var(--ease)}
+  /* when the header slides away, the plan follows it up so no text shows in the gap */
+  body:has(.hdr.is-hidden) .stage__view{top:0}
   .stage__sticky{position:relative;top:0;height:auto;max-height:58vh;margin-inline:auto;gap:12px}
   .stack{max-width:min(100%,56vh)}
   .stage__steps{padding-block:4vh 20vh}
