@@ -360,16 +360,15 @@ export function isoGarden(t) {
 }
 
 // ---------------------------------------------------------- PORTRAIT FRAME
-export function archPortrait(t) {
+// Hanna's photo inside the drawn arch: the outline draws itself, then the photo fades in.
+export function archPortrait(t, src) {
+  const arch = 'M30 510 V200 C30 100 110 20 200 20 C290 20 370 100 370 200 V510 Z';
   return `<svg class="arch" viewBox="0 0 400 520" data-draw role="img" aria-label="${t}">
-    <path class="arch-bg fl nd" d="M30 510 V200 C30 100 110 20 200 20 C290 20 370 100 370 200 V510 Z"/>
-    <path class="ln" d="M30 510 V200 C30 100 110 20 200 20 C290 20 370 100 370 200 V510 Z"/>
-    <path class="ln-thin" d="M48 510 V204 C48 112 120 38 200 38 C280 38 352 112 352 204 V510"/>
-    <path class="ln" d="M200 500 C 196 420 206 350 198 260 C 192 200 200 150 214 110"/>
-    ${[[198, 420, -1, 70, 26], [201, 360, 1, 64, 24], [198, 300, -1, 58, 22], [200, 240, 1, 52, 20], [204, 180, -1, 46, 18], [210, 130, 1, 38, 15]].map(([x, y, s, l, w]) =>
-      `<path class="leaf fl nd" d="M${x} ${y} C ${x + s * l * 0.3} ${y - w} ${x + s * l * 0.8} ${y - w} ${x + s * l} ${y - w * 0.5} C ${x + s * l * 0.8} ${y + w * 0.2} ${x + s * l * 0.3} ${y + w * 0.2} ${x} ${y} Z"/><path class="ln-thin" d="M${x} ${y} C ${x + s * l * 0.3} ${y - w} ${x + s * l * 0.8} ${y - w} ${x + s * l} ${y - w * 0.5} C ${x + s * l * 0.8} ${y + w * 0.2} ${x + s * l * 0.3} ${y + w * 0.2} ${x} ${y} Z M${x} ${y} L${x + s * l * 0.85} ${y - w * 0.45}"/>`).join('')}
-    <circle class="pd pd--blush fl nd" cx="214" cy="104" r="9"/>
-    <text class="t t-xs" x="200" y="490" text-anchor="middle">${t}</text>
+    <defs><clipPath id="arch-clip"><path d="${arch}"/></clipPath></defs>
+    <path class="arch-bg fl nd" d="${arch}"/>
+    <image class="fl" href="${src}" x="30" y="20" width="340" height="490" preserveAspectRatio="xMidYMid slice" clip-path="url(#arch-clip)"/>
+    <path class="ln-thin arch-in" d="M48 510 V204 C48 112 120 38 200 38 C280 38 352 112 352 204 V510"/>
+    <path class="ln" d="${arch}"/>
   </svg>`;
 }
 
@@ -407,15 +406,6 @@ function hedgeBand(seed = 5) {
 const BAND = hedgeBand();
 export const BAND_DEF = BAND.g;
 export const band = (cls = '') => `<div class="band ${cls}" aria-hidden="true"><svg viewBox="0 0 ${BAND.w} 48" preserveAspectRatio="xMinYMid slice"><use href="#band-g"/></svg></div>`;
-
-// Headline inline pill: a tiny living plan.
-export const PILL = `<span class="pill" aria-hidden="true"><svg viewBox="0 0 170 74">
-  <path class="pill-lawn" d="M60 74 C 70 46 110 30 170 30 V74 Z"/>
-  <path class="pill-stones" d="M0 54 C 40 52 70 40 100 20 S 150 0 170 -2"/>
-  <g class="pill-tree"><path class="pill-c" d="${scallop(52, 30, 22, 10)}"/><line class="pill-x" x1="46" y1="30" x2="58" y2="30"/><line class="pill-x" x1="52" y1="24" x2="52" y2="36"/></g>
-  <g class="pill-tree pill-tree--2"><path class="pill-c2" d="${scallop(132, 52, 14, 8)}"/></g>
-  <circle class="pill-dot" cx="98" cy="58" r="3.4"/><circle class="pill-dot pill-dot--b" cx="108" cy="64" r="2.6"/><circle class="pill-dot" cx="20" cy="18" r="2.8"/>
-</svg></span>`;
 
 // Hand-drawn loop around a key word.
 export const SCRIBBLE = '<svg class="scr__svg" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M14 38 C 26 10 150 2 186 22 C 206 36 172 58 100 58 C 36 58 2 46 10 28 C 16 14 66 6 128 9"/></svg>';

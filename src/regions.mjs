@@ -20,7 +20,7 @@ const hu = {
   },
   gyor: {
     n: '01', name: 'Győr és Győr-Moson-Sopron', short: 'Rendezett, szélvédett, jól kivitelezhető családi házas kertek a Kisalföldön.',
-    title: 'Kerttervezés Győr és Győr-Moson-Sopron megye | Dóbiás Hanna',
+    title: 'Kerttervezés Győr és Győr-Moson-Sopron megye | HoneyGarden',
     desc: 'Egyedi kerttervezés Győrben és Győr-Moson-Sopron megyében: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv családi házakhoz.',
     h1: 'Kerttervezés Győrben és Győr-Moson-Sopron megyében',
     tag: 'Rendezett kert a Kisalföld szelében is.',
@@ -76,7 +76,7 @@ const hu = {
   },
   budapest: {
     n: '02', name: 'Budapest és agglomeráció', short: 'Kis és lejtős telkek, új építésű házak – élhető kert a város mellett.',
-    title: 'Kerttervezés Budapest és agglomeráció | Dóbiás Hanna',
+    title: 'Kerttervezés Budapest és agglomeráció | HoneyGarden',
     desc: 'Egyedi kerttervezés Budapesten és az agglomerációban: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv modern családi házakhoz.',
     h1: 'Kerttervezés Budapesten és az agglomerációban',
     tag: 'Kis telek, nagy kert – ha jól van megtervezve.',
@@ -132,7 +132,7 @@ const hu = {
   },
   balaton: {
     n: '03', name: 'Balaton környéke', short: 'Nyaralók és második otthonok – látványos kert, kevés gondozással.',
-    title: 'Kerttervezés Balaton – nyaraló és lakókert | Dóbiás Hanna',
+    title: 'Kerttervezés Balaton – nyaraló és lakókert | HoneyGarden',
     desc: 'Egyedi kerttervezés a Balaton környékén nyaralókhoz és második otthonokhoz: kevés gondozást igénylő, látványos kertek koncepciótervtől a 3D látványtervig.',
     h1: 'Kerttervezés a Balaton környékén',
     tag: 'Kert, ami akkor is rendben van, amikor nem vagy ott.',
@@ -196,7 +196,7 @@ const en = {
   },
   gyor: {
     n: '01', name: 'Győr & Győr-Moson-Sopron', short: 'Orderly, wind-sheltered, buildable family gardens on the Little Hungarian Plain.',
-    title: 'Garden Design in Győr & Győr-Moson-Sopron | Hanna Dóbiás',
+    title: 'Garden Design in Győr & Győr-Moson-Sopron | HoneyGarden',
     desc: 'Bespoke garden design in Győr and Győr-Moson-Sopron county: concept plan, planting plan, construction drawings and 3D visualisation for family homes.',
     h1: 'Garden design in Győr and Győr-Moson-Sopron county',
     tag: 'An orderly garden, even in the plain’s wind.',
@@ -251,7 +251,7 @@ const en = {
   },
   budapest: {
     n: '02', name: 'Budapest & surroundings', short: 'Small and sloping plots, new builds – liveable gardens next to the city.',
-    title: 'Garden Design in Budapest & Surroundings | Hanna Dóbiás',
+    title: 'Garden Design in Budapest & Surroundings | HoneyGarden',
     desc: 'Bespoke garden design in Budapest and its agglomeration: concept plan, planting plan, construction drawings and 3D visualisation for modern family homes.',
     h1: 'Garden design in Budapest and its surroundings',
     tag: 'Small plot, big garden – if it’s well planned.',
@@ -306,7 +306,7 @@ const en = {
   },
   balaton: {
     n: '03', name: 'Lake Balaton', short: 'Holiday homes and second homes – a striking garden with little upkeep.',
-    title: 'Garden Design at Lake Balaton | Hanna Dóbiás',
+    title: 'Garden Design at Lake Balaton | HoneyGarden',
     desc: 'Bespoke garden design around Lake Balaton for holiday and second homes: striking, low-maintenance gardens from concept plan to 3D visualisation.',
     h1: 'Garden design around Lake Balaton',
     tag: 'A garden that stays in shape while you’re away.',
@@ -378,12 +378,12 @@ for (const [lang, src] of [['hu', hu], ['en', en]]) {
 
 // Home SEO: regional title/description and a clearer service-area answer in the FAQ.
 Object.assign(T.hu.home, {
-  title: 'Kerttervezés Győr, Budapest, Balaton | Dóbiás Hanna',
-  desc: 'Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. Dóbiás Hanna kerttervező.',
+  title: 'Kerttervezés Győr, Budapest, Balaton | HoneyGarden',
+  desc: 'Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.',
 });
 Object.assign(T.en.home, {
-  title: 'Garden Design in Győr, Budapest & Lake Balaton | Hanna Dóbiás',
-  desc: 'Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. Hanna Dóbiás, garden designer.',
+  title: 'Garden Design in Győr, Budapest & Lake Balaton | HoneyGarden',
+  desc: 'Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.',
 });
 T.hu.home.faq.items[4][1] = 'Helyszíni bejárással Győrben és Győr-Moson-Sopron megyében, Budapesten és az agglomerációban, valamint a Balaton környékén. Online konzultációval, fotók és felmérési adatok alapján az ország bármely részére.';
 T.en.home.faq.items[4][1] = 'With site visits in Győr and Győr-Moson-Sopron county, in Budapest and its surroundings, and around Lake Balaton. Anywhere else in Hungary through online consultation, photos and survey data.';

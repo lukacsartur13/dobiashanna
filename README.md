@@ -1,4 +1,4 @@
-# Dóbiás Hanna — kerttervezés (HU / EN)
+# HoneyGarden kerttervezés — Dóbiás Hanna (HU / EN)
 
 Statikus weboldal, nincs szükség szerverre vagy build-eszközre a megjelenítéshez:
 nyisd meg az `index.html`-t, vagy töltsd fel a mappát bármilyen tárhelyre.
@@ -13,6 +13,7 @@ A HTML-oldalak **generáltak**. Ne a `.html` fájlokat szerkeszd, hanem:
 | `src/svg.mjs` | Az összes SVG-rajz: alaprajz, buborékdiagram, metszet, 3D modell, virágzási naptár |
 | `build.mjs` | Oldalsablonok (fejléc, lábléc, szekciók) |
 | `assets/style.css`, `assets/main.js` | Stílus és animációk |
+| `assets/img/` | Fotók: `kert-hero.jpg` (a kezdőlap címe mögött), `hanna.jpg` (Rólam, íves keretben) |
 
 Módosítás után:
 
@@ -37,8 +38,8 @@ node build.mjs
 
 ## Élesítés előtt kitöltendő
 
-- `src/content.mjs` → `SITE`: telefonszám, e-mail, Instagram, Facebook, végleges domain
-- Hanna fotója (most egy botanikus ív-keret a helyőrző a Rólam szekcióban)
+- `src/content.mjs` → `SITE`: e-mail, Instagram, Facebook, végleges domain (a név és a telefonszám már a végleges)
+- A hero-fotó (`assets/img/kert-hero.jpg`) csak 1103 px széles; nagy kijelzőn egy legalább 2400 px-es változat élesebb lenne
 - Az átfutási idők a GYIK-ben (2–3 hét / 4–8 hét) minta-értékek
 - Adatkezelési tájékoztató oldal (az űrlap hivatkozik rá)
 - Az ajánlatkérő űrlap jelenleg előre kitöltött e-mailt nyit (mailto). Igazi beküldéshez

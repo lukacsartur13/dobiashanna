@@ -1,9 +1,10 @@
 // All copy, both languages. Contact details live in SITE — change them once here.
 
 export const SITE = {
-  name: 'Dóbiás Hanna',
-  phone: '+36 30 000 0000',          // TODO: valódi telefonszám
-  phoneHref: '+36300000000',
+  name: 'HoneyGarden',
+  designer: { hu: 'Dóbiás Hanna', en: 'Hanna Dóbiás' },
+  phone: '+36 20 591 2651',
+  phoneHref: '+36205912651',
   email: 'hello@dobiashanna.hu',     // TODO: valódi e-mail cím
   instagram: 'https://instagram.com/', // TODO
   facebook: 'https://facebook.com/',   // TODO
@@ -25,7 +26,7 @@ export const SERVICE_KEYS = ['concept', 'planting', 'construction', 'visual'];
 const hu = {
   lang: 'hu', locale: 'hu_HU', other: 'en',
   nav: { services: 'Szolgáltatások', about: 'Rólam', process: 'Munkafolyamat', faq: 'Kérdések', cta: 'Ajánlatkérés', menu: 'Menü', close: 'Bezár', skip: 'Ugrás a tartalomra' },
-  brandSub: 'Kerttervezés',
+  brandSub: 'kerttervezés',
   services: {
     concept:      { n: '01', title: 'Koncepcióterv', short: 'A kert váza: zónák, kapcsolatok, hangulat – még növények nélkül.' },
     planting:     { n: '02', title: 'Növénykiültetési terv', short: 'Fajra és darabszámra pontos ültetés, ami minden évszakban ad valamit.' },
@@ -60,10 +61,11 @@ const hu = {
   },
 
   home: {
-    title: 'Kerttervezés | Dóbiás Hanna – egyedi kerttervek',
-    desc: 'Egyedi kerttervek családi házakhoz és nyaralókhoz: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. Dóbiás Hanna kerttervező.',
+    title: 'Kerttervezés | HoneyGarden – egyedi kerttervek',
+    desc: 'Egyedi kerttervek családi házakhoz és nyaralókhoz: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.',
     eyebrow: 'Dóbiás Hanna — kerttervező',
-    h1: 'A kert, {pill} amit<br>először papíron<br><em>szeretsz meg.</em>',
+    h1: 'Minden kert<br>egy történet,<br><em>a tiéd vajon mi lesz?</em>',
+    photoAlt: 'Kanyargó gyepút évelőágyások és díszfüvek között',
     lead: 'Egyedi kertterveket készítek családi házakhoz, nyaralókhoz és kisebb közösségi terekhez. Olyan kertet, ami nemcsak a látványterven szép, hanem a hétköznapokban is jól működik – és évről évre csak jobb lesz.',
     btn1: 'Ajánlatot kérek', btn2: 'Szolgáltatások',
     facts: [['4', 'tervtípus, külön vagy csomagban'], ['1:100', 'pontos, méretarányos tervlapok'], ['12', 'hónap, amikor van mit nézni'], ['1', 'tervező, az első bejárástól a kész tervig']],
@@ -108,7 +110,7 @@ const hu = {
       eyebrow: 'Rólam',
       h: 'Szia, <em>Hanna vagyok.</em>',
       p: ['Abban hiszek, hogy egy kert akkor jó, ha a benne élők [[szokásaiból]] nő ki – nem egy katalógusból. Ezért minden tervet azzal kezdek, hogy megismerlek: hogyan telik egy reggeled, hol iszod a kávét, kell-e hely a biciklinek, a kutyának, a nagy családi ebédnek.', 'A tervezésben a telek adottságait, a fenntartható működést és a hosszú távú szépséget egyszerre tartom szem előtt. Olyan kertet szeretnék adni, amit nem kell félni használni.'],
-      link: 'Bővebben rólam', portrait: 'Ide kerül Hanna fotója',
+      link: 'Bővebben rólam', portrait: 'Dóbiás Hanna kerttervező munka közben, előtte egy kertterv',
     },
     faq: {
       eyebrow: 'Kérdések',
@@ -125,7 +127,7 @@ const hu = {
   },
 
   concept: {
-    title: 'Koncepcióterv | Dóbiás Hanna kerttervezés',
+    title: 'Koncepcióterv | HoneyGarden kerttervezés',
     desc: 'Koncepcióterv: funkcionális zónák, térkapcsolatok, közlekedés és hangulat – a kert váza, amire minden további terv épül.',
     tag: 'Először a nagy egész.',
     lead: 'A koncepcióterv a kert váza. Eldönti, mi hová kerül, hogyan kapcsolódnak egymáshoz a terek, merre vezet az út, és milyen hangulata lesz az egésznek. Erre épül minden további terv.',
@@ -142,7 +144,7 @@ const hu = {
     faq: [['Kell koncepcióterv, ha csak növényeket szeretnék?', 'Ha a kert szerkezete – utak, terasz, gyep – már megvan és jól működik, nem feltétlenül. Ilyenkor egyből ültetési tervvel indulhatunk.'], ['Hány változatot kapok?', 'Jellemzően két-három irányt vázolok fel, ezekből választunk és finomítunk.'], ['Mi a különbség a koncepció és a kiviteli terv között?', 'A koncepció azt mondja meg, mi hová kerül. A kiviteli terv azt, hogy pontosan milyen méretben, anyagból és szinten.']],
   },
   planting: {
-    title: 'Növénykiültetési terv | Dóbiás Hanna kerttervezés',
+    title: 'Növénykiültetési terv | HoneyGarden kerttervezés',
     desc: 'Növénykiültetési terv fajra, fajtára és darabszámra pontosan: virágzási naptár, növénylista, ültetési távolságok és gondozási útmutató.',
     tag: 'Minden évszakra jusson valami.',
     lead: 'Fajra, fajtára és darabszámra pontos ültetési terv, ami a telek talajához, fényviszonyaihoz és a gondozásra szánt idődhöz igazodik. Szép az első nyáron – és tíz év múlva is.',
@@ -160,7 +162,7 @@ const hu = {
     faq: [['Honnan tudom beszerezni a növényeket?', 'A tervhez beszerzési listát adok, amivel bármelyik faiskolából rendelhetsz. Kérésre konkrét faiskolákat is ajánlok.'], ['Lehet kevés gondozást igénylő a kert?', 'Igen – ez az egyik leggyakoribb kérés. A növényválasztás a gondozásra szánt idődhöz igazodik.'], ['Őshonos növényekkel is tervezel?', 'Szívesen, és sokszor ezt is javaslom: ellenállóbbak, és jobban segítik a kerti élővilágot.']],
   },
   construction: {
-    title: 'Kiviteli kertterv | Dóbiás Hanna kerttervezés',
+    title: 'Kiviteli kertterv | HoneyGarden kerttervezés',
     desc: 'Kiviteli kertterv: kitűzési, burkolati, szint- és lejtésterv, metszetek, részletrajzok és anyagkimutatás – pontos alap a kivitelezéshez.',
     tag: 'Méret, szint, anyag – pontosan.',
     lead: 'A kiviteli terv a kivitelező nyelve. Méretezett rajzok, metszetek és anyaglisták, amelyekből pontosan árazni és építeni lehet – így a kert úgy valósul meg, ahogy elképzelted.',
@@ -178,7 +180,7 @@ const hu = {
     faq: [['Szükséges kiviteli terv egy kis kerthez?', 'Ha nincs burkolat, szintkülönbség vagy építmény, sokszor elég a koncepció és az ültetési terv. Megmondom őszintén.'], ['Engedélyezési tervet is készítesz?', 'A kertépítési munkák többsége nem engedélyköteles. Ha mégis az, a szükséges szakági tervezővel együttműködve oldjuk meg.'], ['Öntözőrendszert is tervezel?', 'Az öntözési igényt és zónákat a tervben jelölöm; a részletes öntözéstervet szakkivitelezővel közösen készítjük.']],
   },
   visual: {
-    title: '3D látványterv | Dóbiás Hanna kerttervezés',
+    title: '3D látványterv | HoneyGarden kerttervezés',
     desc: '3D kerttervezés és látványterv: valósághű nézetek, anyag- és színváltozatok, évszakos hangulatképek a kivitelezés előtt.',
     tag: 'Sétálj be, mielőtt megépül.',
     lead: 'Valósághű látványtervek, amelyeken a kivitelezés előtt láthatod az arányokat, anyagokat és a kert hangulatát – különböző napszakokban és évszakokban.',
@@ -195,17 +197,17 @@ const hu = {
     faq: [['Kell hozzá koncepcióterv?', 'Igen, a látványterv a kész koncepcióra épül – a 3D a döntés eszköze, nem a kiindulópontja.'], ['Hány képet kapok?', 'Jellemzően 4–6 kidolgozott nézetet, igény szerint madártávlati és évszakos képekkel.'], ['Videót vagy bejárást is készítesz?', 'Kérésre rövid körbejáró animáció is készülhet. Ezt az ajánlatban külön jelzem.']],
   },
   about: {
-    title: 'Rólam | Dóbiás Hanna kerttervezés',
+    title: 'Rólam – Dóbiás Hanna | HoneyGarden kerttervezés',
     desc: 'Dóbiás Hanna kerttervező: személyes, átlátható tervezés, a kert használóiból kiindulva.',
     eyebrow: 'Rólam',
     h1: 'Szia, <em>Hanna vagyok.</em>',
     lead: 'Kerteket tervezek embereknek – nem fordítva.',
     p: ['A kertek iránti szeretetem nem egy íróasztalnál kezdődött, hanem kint, a földben. Ma is ott a legjobb gondolkodni: egy telken állva, napfényben, szélben, a szomszéd diófájának árnyékában.', 'Tervezőként azt keresem, hogyan lehet egy kertet úgy kialakítani, hogy ne kelljen alkalmazkodni hozzá. Hogy a reggeli kávé helye ott legyen, ahol a nap először odasüt. Hogy a gyerek labdája ne a levendulásban kössön ki. Hogy ősszel is legyen miért kinézni az ablakon.', 'Minden tervet személyesen készítek, az első bejárástól az utolsó tervlapig. Így pontosan tudod, kivel dolgozol – és én is pontosan tudom, kinek tervezek.'],
     values: { h: 'Amiben <em>hiszek</em>', items: [['A kert a használatból nő ki', 'Nem a trendekből indulok, hanem abból, hogyan élsz. A forma ebből következik.'], ['Fenntartható, nem fenntartásigényes', 'Helyhez illő növények, átgondolt vízhasználat, kevesebb vegyszer és kevesebb munka.'], ['Őszinte, átlátható folyamat', 'Írásos ajánlat, világos ütemezés, és ha valamire nincs szükséged, azt is megmondom.']] },
-    portrait: 'Ide kerül Hanna fotója',
+    portrait: 'Dóbiás Hanna kerttervező munka közben, előtte egy kertterv',
   },
   contact: {
-    title: 'Ajánlatkérés | Dóbiás Hanna kerttervezés',
+    title: 'Ajánlatkérés | HoneyGarden kerttervezés',
     desc: 'Kérj ajánlatot kerttervezésre: pár mondat a kertedről, és két munkanapon belül jelentkezem.',
     eyebrow: 'Ajánlatkérés',
     h1: 'Mesélj <em>a kertedről.</em>',
@@ -220,7 +222,7 @@ const hu = {
 const en = {
   lang: 'en', locale: 'en_GB', other: 'hu',
   nav: { services: 'Services', about: 'About', process: 'Process', faq: 'Questions', cta: 'Enquire', menu: 'Menu', close: 'Close', skip: 'Skip to content' },
-  brandSub: 'Garden design',
+  brandSub: 'garden design',
   services: {
     concept:      { n: '01', title: 'Concept plan', short: 'The bones of the garden: zones, connections and mood – before a single plant.' },
     planting:     { n: '02', title: 'Planting plan', short: 'Species-accurate planting that gives you something to look at every season.' },
@@ -255,10 +257,11 @@ const en = {
   },
 
   home: {
-    title: 'Garden design | Hanna Dóbiás – bespoke garden plans',
-    desc: 'Bespoke garden design for family homes and holiday houses: concept plan, planting plan, construction drawings and 3D visualisation. Hanna Dóbiás, garden designer.',
+    title: 'Garden design | HoneyGarden – bespoke garden plans',
+    desc: 'Bespoke garden design for family homes and holiday houses: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.',
     eyebrow: 'Hanna Dóbiás — garden designer',
-    h1: 'The garden {pill}<br>you love<br><em>on paper first.</em>',
+    h1: 'Every garden<br>is a story –<br><em>what will yours be?</em>',
+    photoAlt: 'A winding lawn path between perennial borders and ornamental grasses',
     lead: 'I design bespoke gardens for family homes, holiday houses and small community spaces. Gardens that look good not only in the visualisation, but work well every day – and only get better with each year.',
     btn1: 'Request a quote', btn2: 'Services',
     facts: [['4', 'plan types, separately or combined'], ['1:100', 'precise, scaled drawing sheets'], ['12', 'months with something to look at'], ['1', 'designer, from first visit to final sheet']],
@@ -303,7 +306,7 @@ const en = {
       eyebrow: 'About',
       h: 'Hi, <em>I’m Hanna.</em>',
       p: ['I believe a garden is good when it grows out of the [[habits]] of the people who live in it – not out of a catalogue. That’s why every design starts with getting to know you: how your mornings go, where you drink your coffee, whether there needs to be room for bikes, the dog, the big family lunch.', 'When designing I keep the character of the site, sustainable upkeep and long-term beauty in view at the same time. I want to give you a garden you’re never afraid to use.'],
-      link: 'More about me', portrait: 'Hanna’s photo goes here',
+      link: 'More about me', portrait: 'Hanna Dóbiás, garden designer, at work with a garden plan in front of her',
     },
     faq: {
       eyebrow: 'Questions',
@@ -320,7 +323,7 @@ const en = {
   },
 
   concept: {
-    title: 'Concept plan | Hanna Dóbiás garden design',
+    title: 'Concept plan | HoneyGarden garden design',
     desc: 'Concept plan: functional zones, spatial relationships, circulation and mood – the framework every further plan builds on.',
     tag: 'The big picture first.',
     lead: 'The concept plan is the skeleton of the garden. It decides what goes where, how spaces connect, where the path leads and what the whole will feel like. Every further plan builds on it.',
@@ -337,7 +340,7 @@ const en = {
     faq: [['Do I need a concept plan if I only want plants?', 'If the structure – paths, terrace, lawn – is already there and works, not necessarily. Then we can go straight to a planting plan.'], ['How many options do I get?', 'Typically two or three directions, from which we choose and refine.'], ['What’s the difference between concept and construction plans?', 'The concept says what goes where. The construction plan says exactly how big, what material and at what level.']],
   },
   planting: {
-    title: 'Planting plan | Hanna Dóbiás garden design',
+    title: 'Planting plan | HoneyGarden garden design',
     desc: 'Planting plan accurate to species, cultivar and quantity: flowering calendar, plant list, spacing and aftercare guide.',
     tag: 'Something for every season.',
     lead: 'A planting plan accurate to species, cultivar and quantity, matched to your plot’s soil, light and the time you want to spend on upkeep. Beautiful in the first summer – and in ten years too.',
@@ -355,7 +358,7 @@ const en = {
     faq: [['Where do I get the plants?', 'The plan includes a shopping list you can order from any nursery. On request I recommend specific nurseries too.'], ['Can the garden be low-maintenance?', 'Yes – it’s one of the most common requests. Plant choice follows the time you want to spend.'], ['Do you design with native plants?', 'Gladly, and I often suggest it: they’re more resilient and better for garden wildlife.']],
   },
   construction: {
-    title: 'Construction plan | Hanna Dóbiás garden design',
+    title: 'Construction plan | HoneyGarden garden design',
     desc: 'Garden construction drawings: setting-out, paving, levels and drainage, sections, details and bill of quantities – a precise basis for building.',
     tag: 'Size, level, material – exactly.',
     lead: 'The construction plan is your builder’s language. Dimensioned drawings, sections and material lists that can be priced and built precisely – so the garden turns out the way you imagined.',
@@ -373,7 +376,7 @@ const en = {
     faq: [['Does a small garden need a construction plan?', 'If there’s no paving, level change or structure, the concept and planting plans are often enough. I’ll tell you honestly.'], ['Do you prepare permit drawings?', 'Most garden works don’t need a permit. If yours does, we handle it together with the relevant specialist.'], ['Do you design irrigation?', 'I mark irrigation needs and zones in the plan; the detailed irrigation design is done together with a specialist installer.']],
   },
   visual: {
-    title: '3D visualisation | Hanna Dóbiás garden design',
+    title: '3D visualisation | HoneyGarden garden design',
     desc: '3D garden design and visualisation: realistic views, material and colour options, seasonal mood images before construction.',
     tag: 'Walk in before it’s built.',
     lead: 'Realistic visualisations showing proportions, materials and the mood of the garden before construction – at different times of day and in different seasons.',
@@ -390,17 +393,17 @@ const en = {
     faq: [['Do I need a concept plan first?', 'Yes, the visualisation builds on the finished concept – 3D is a tool for deciding, not the starting point.'], ['How many images do I get?', 'Typically 4–6 finished views, plus bird’s-eye and seasonal images on request.'], ['Do you make videos or walkthroughs?', 'A short fly-around animation is possible on request. I’ll list it separately in the quote.']],
   },
   about: {
-    title: 'About | Hanna Dóbiás garden design',
+    title: 'About Hanna Dóbiás | HoneyGarden garden design',
     desc: 'Hanna Dóbiás, garden designer: personal, transparent design that starts from the people who use the garden.',
     eyebrow: 'About',
     h1: 'Hi, <em>I’m Hanna.</em>',
     lead: 'I design gardens for people – not the other way round.',
     p: ['My love of gardens didn’t begin at a desk, but outside, in the soil. It’s still the best place to think: standing on a plot, in sun and wind, in the shade of the neighbour’s walnut tree.', 'As a designer I look for ways to shape a garden so you don’t have to adapt to it. So that the morning coffee spot is where the sun reaches first. So that the kids’ ball doesn’t end up in the lavender. So that there’s a reason to look out of the window in autumn too.', 'I make every design personally, from the first visit to the last sheet. So you know exactly who you’re working with – and I know exactly who I’m designing for.'],
     values: { h: 'What I <em>believe in</em>', items: [['A garden grows out of use', 'I don’t start from trends, but from how you live. The form follows from that.'], ['Sustainable, not high-maintenance', 'Plants that suit the site, thoughtful water use, fewer chemicals and less work.'], ['An honest, transparent process', 'A written quote, a clear schedule – and if you don’t need something, I’ll tell you.']] },
-    portrait: 'Hanna’s photo goes here',
+    portrait: 'Hanna Dóbiás, garden designer, at work with a garden plan in front of her',
   },
   contact: {
-    title: 'Enquiry | Hanna Dóbiás garden design',
+    title: 'Enquiry | HoneyGarden garden design',
     desc: 'Request a garden design quote: a few lines about your garden, and I’ll get back to you within two working days.',
     eyebrow: 'Enquiry',
     h1: 'Tell me <em>about your garden.</em>',

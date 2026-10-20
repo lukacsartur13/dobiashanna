@@ -28,6 +28,7 @@ const GLYPH = {
   mail: '<svg viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12"/><path d="M4 7 L12 13 L20 7"/></svg>',
   phone: '<svg viewBox="0 0 24 24"><path d="M6 4 H10 L11.5 8.5 L9 10 C10 12.5 11.5 14 14 15 L15.5 12.5 L20 14 V18 C20 19 19 20 18 20 C10 19.5 4.5 14 4 6 C4 5 5 4 6 4 Z"/></svg>',
 };
+const brand = (t, cls = '') => `<a class="brand ${cls}" href="${link(t.lang, 'home')}" aria-label="${SITE.name} ${t.brandSub}">${S.LOGO}<span class="brand__name">${SITE.name}</span><span class="brand__sub">${t.brandSub}</span></a>`;
 const ic = (g = 'arrow', cls = '') => `<span class="ic ${cls}" aria-hidden="true"><span class="ic__in">${GLYPH[g]}${GLYPH[g]}</span></span>`;
 const pm = '<span class="ic ic--pm" aria-hidden="true"><i></i><i></i></span>';
 const btn = (href, label, { cls = '', g = 'arrow', attrs = '' } = {}) =>
@@ -38,6 +39,8 @@ const rich = s => s.replace(/\[\[(.+?)\]\]/g, `<mark class="scr">$1${S.SCRIBBLE}
 // (Browser hyphenation guesses Hungarian breaks wrong, so it is switched off in the CSS.)
 const SHY = { agglomerációban: 'agglomeráció&shy;ban', agglomeration: 'agglomer&shy;ation', Növénykiültetési: 'Növény&shy;kiültetési', mennyiségkimutatás: 'mennyiség&shy;kimutatás' };
 const SHY_RE = new RegExp(Object.keys(SHY).join('|'), 'g');
+// The menu is set in lowercase; acronyms such as "3D" keep their capitals.
+const nocase = s => s.replace(/\b(?=\w*[A-Z])[A-Z0-9]{2,}\b/g, '<span class="nocase">$&</span>');
 const shy = html => html.replace(/>([^<]+)</g, (m, txt) => `>${txt.replace(SHY_RE, w => SHY[w])}<`); // text only, never attributes
 
 function header(t, key) {
@@ -46,7 +49,7 @@ function header(t, key) {
   const regs = REGION_KEYS.map(k => `<li><a href="${L(k)}"${k === key ? ' aria-current="page"' : ''}><span class="mono">${t[k].n}</span><span>${t[k].name}</span>${ic()}</a></li>`).join('');
   return `<a class="skip" href="#main">${t.nav.skip}</a>
 <header class="hdr" data-hdr>
-  <a class="brand" href="${L('home')}" aria-label="${SITE.name} – ${t.brandSub}">${S.LOGO}<span class="brand__name">${SITE.name}</span><span class="brand__sub mono">${t.brandSub}</span></a>
+  ${brand(t)}
   <nav class="nav" aria-label="${t.nav.menu}">
     <ul class="nav__list">
       <li class="nav__drop"><a href="${L('home')}#szolgaltatasok"${SERVICE_KEYS.includes(key) ? ' aria-current="true"' : ''}><i></i>${t.nav.services}</a><ul class="nav__sub">${svcs}</ul></li>
@@ -64,7 +67,7 @@ function header(t, key) {
 </header>
 <div class="menu" id="menu" data-menu hidden>
   <ol class="menu__list">
-    ${SERVICE_KEYS.map(k => `<li><a href="${L(k)}"><span class="mono">${t.services[k].n}</span>${t.services[k].title}</a></li>`).join('')}
+    ${SERVICE_KEYS.map(k => `<li><a href="${L(k)}"><span class="mono">${t.services[k].n}</span><span>${nocase(t.services[k].title)}</span></a></li>`).join('')}
     ${REGION_KEYS.map(k => `<li class="menu__reg"><a href="${L(k)}"><span class="mono">${t.regionsUI.region} ${t[k].n}</span>${t[k].name}</a></li>`).join('')}
     <li><a href="${L('about')}"><span class="mono">05</span>${t.nav.about}</a></li>
     <li><a href="${L('contact')}"><span class="mono">06</span>${t.nav.cta}</a></li>
@@ -102,7 +105,7 @@ function footer(t) {
   return `<footer class="ftr">
   <div class="wrap ftr__grid">
     <div class="ftr__col ftr__brand">
-      <a class="brand brand--lg" href="${L('home')}">${S.LOGO}<span class="brand__name">${SITE.name}</span></a>
+      ${brand(t, 'brand--lg')}
       <p>${t.footer.tag}</p>
     </div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.pages}</p><ul>${SERVICE_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t.services[k].title}</a></li>`).join('')}<li><a class="ulink" href="${L('about')}">${t.nav.about}</a></li><li><a class="ulink" href="${L('contact')}">${t.nav.cta}</a></li></ul></div>
@@ -110,7 +113,7 @@ function footer(t) {
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.contact}</p><ul><li><a class="ulink" href="tel:${SITE.phoneHref}">${SITE.phone}</a></li><li><a class="ulink" href="mailto:${SITE.email}">${SITE.email}</a></li></ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.follow}</p><ul><li><a class="ulink" href="${SITE.instagram}" rel="noopener">Instagram</a></li><li><a class="ulink" href="${SITE.facebook}" rel="noopener">Facebook</a></li></ul></div>
   </div>
-  <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name}. ${t.footer.legal}</span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
+  <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name} ${t.brandSub}. ${t.footer.legal}</span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
   <p class="ftr__giant" aria-hidden="true">${t.brandSub}</p>
 </footer>`;
 }
@@ -118,7 +121,8 @@ function footer(t) {
 // ------------------------------------------------------------ STRUCTURED DATA
 const BIZ_ID = `${SITE.domain}/#business`;
 const business = t => ({
-  '@type': 'ProfessionalService', '@id': BIZ_ID, name: `${SITE.name} – ${t.brandSub}`, url: `${SITE.domain}/`,
+  '@type': 'ProfessionalService', '@id': BIZ_ID, name: `${SITE.name} ${t.brandSub}`, url: `${SITE.domain}/`,
+  founder: { '@type': 'Person', name: SITE.designer[t.lang], jobTitle: t.lang === 'en' ? 'Garden designer' : 'Kerttervező' },
   email: SITE.email, telephone: SITE.phone, knowsLanguage: ['hu', 'en'],
   description: t.home.desc,
   areaServed: REGION_KEYS.flatMap(k => t[k].schemaArea.map(([type, name]) => ({ '@type': type, name }))),
@@ -151,7 +155,7 @@ function layout(t, key, body, { bodyClass = '', ctaO = {}, graph = [] } = {}) {
 <meta property="og:description" content="${p.desc}">
 <meta property="og:locale" content="${t.locale}">
 <meta property="og:url" content="${url(t.lang, key)}">
-<meta property="og:site_name" content="${SITE.name} – ${t.brandSub}">
+<meta property="og:site_name" content="${SITE.name} ${t.brandSub}">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [business(t), ...graph] })}</script>
 <meta name="theme-color" content="#D8CBB2">
@@ -189,7 +193,10 @@ function home(t) {
     <div class="hero__meta mono">
       <h1 class="lbl"><i></i>${h.seoH1}</h1>${h.meta.map(m => `<span>${m}</span>`).join('')}
     </div>
-    <p class="display hero__h">${h.h1.replace('{pill}', S.PILL)}</p>
+    <div class="hero__ph">
+      <img src="${asset(t.lang)}img/kert-hero.jpg" alt="${h.photoAlt}" width="1103" height="624" fetchpriority="high">
+      <p class="display hero__h">${h.h1}</p>
+    </div>
     <div class="hero__grid">
       <div class="hero__side">
         <p class="lead">${h.lead}</p>
@@ -218,7 +225,7 @@ function home(t) {
   <div class="wrap bento">
     <div class="bento__big" data-reveal>
       ${S.PLUS4}
-      <p class="lbl"><i></i>${t.brandSub} · ${SITE.name}</p>
+      <p class="lbl"><i></i>${SITE.name} · ${t.brandSub}</p>
       <h2 class="display">${h.bento.big}</h2>
       <p class="bento__note">${h.bento.note}</p>
       <svg class="bento__sym" viewBox="0 0 120 120" aria-hidden="true"><path class="ln-thin" d="${S.scallop(60, 60, 48, 16, 1.1)}"/><path class="ln-hair" d="${S.scallop(60, 60, 30, 11, 1.12)}"/><line class="ln-hair" x1="52" y1="60" x2="68" y2="60"/><line class="ln-hair" x1="60" y1="52" x2="60" y2="68"/></svg>
@@ -286,7 +293,7 @@ ${regionsBlock(t, null, 5, 'regiok')}
     <div class="about-t__l">
       ${lbl(6, lab[4])}
       <p class="body-l about-t__intro" data-reveal>${rich(h.about.p[0])}</p>
-      <div class="about-t__art" data-reveal>${S.archPortrait(h.about.portrait)}</div>
+      <div class="about-t__art" data-reveal>${S.archPortrait(h.about.portrait, `${asset(t.lang)}img/hanna.jpg`)}</div>
     </div>
     <div class="about-t__r">
       <h2 class="display display--lg" id="about-h" data-reveal>${h.about.h}</h2>
@@ -527,7 +534,7 @@ function about(t) {
   return layout(t, 'about', `
 <section class="shero ab-hero">
   <div class="wrap ab-hero__grid">
-    <div class="ab-hero__art">${S.archPortrait(a.portrait)}</div>
+    <div class="ab-hero__art">${S.archPortrait(a.portrait, `${asset(t.lang)}img/hanna.jpg`)}</div>
     <div class="ab-hero__copy">
       <p class="lbl"><i></i>${a.eyebrow}</p>
       <h1 class="display shero__h"><span class="indent" aria-hidden="true"></span>${a.h1}</h1>
@@ -615,15 +622,15 @@ function llms() {
     other: [li(lang, 'home', t.home.title.split(' | ')[0], t.home.desc), li(lang, 'about', t.about.title.split(' | ')[0], t.about.desc), li(lang, 'contact', t.contact.title.split(' | ')[0], t.contact.desc)],
   });
   const h = pages(H, 'hu'), e = pages(E, 'en');
-  return `# ${SITE.name} – ${H.brandSub}
+  return `# ${SITE.name} ${H.brandSub}
 
 > ${plain(H.home.desc)}
 > ${plain(E.home.desc)}
 > ${SITE.phone} — ${SITE.email} — ${SITE.domain}
 
-${SITE.name} kerttervező: egyedi kertterveket készít családi házakhoz, nyaralókhoz és kisebb közösségi terekhez. Négy tervtípus kérhető külön vagy együtt: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. Helyszíni bejárással dolgozik a következő régiókban: ${areaLine(H)}; online konzultációval az ország bármely részén. A tervezési díj egyedi, a helyszíni bejárás után írásos, tételes ajánlatban rögzül – fix árlista nincs. Ajánlatkérés az ajánlatkérő oldalon, e-mailben vagy telefonon.
+A HoneyGarden kerttervezés Dóbiás Hanna kerttervező műhelye: egyedi kertterveket készít családi házakhoz, nyaralókhoz és kisebb közösségi terekhez. Négy tervtípus kérhető külön vagy együtt: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. Helyszíni bejárással dolgozik a következő régiókban: ${areaLine(H)}; online konzultációval az ország bármely részén. A tervezési díj egyedi, a helyszíni bejárás után írásos, tételes ajánlatban rögzül – fix árlista nincs. Ajánlatkérés az ajánlatkérő oldalon, e-mailben vagy telefonon.
 
-Hanna Dóbiás is a garden designer creating bespoke garden plans for family homes, holiday houses and small community spaces. Four plan types can be ordered separately or together: concept plan, planting plan, construction drawings and 3D visualisation. Site visits in: ${areaLine(E)}; anywhere in Hungary via online consultation. Fees are quoted individually in writing after the site visit – there is no fixed price list.
+HoneyGarden garden design is the studio of garden designer Hanna Dóbiás, creating bespoke garden plans for family homes, holiday houses and small community spaces. Four plan types can be ordered separately or together: concept plan, planting plan, construction drawings and 3D visualisation. Site visits in: ${areaLine(E)}; anywhere in Hungary via online consultation. Fees are quoted individually in writing after the site visit – there is no fixed price list.
 
 A honlap két nyelvű: magyarul a gyökérben, angolul az /en/ alatt. The site is bilingual: Hungarian at the root, English under /en/.
 
@@ -659,7 +666,7 @@ ${e.other.join('\n')}
 }
 
 function llmsFull() {
-  const out = [`# ${SITE.name} – ${T.hu.brandSub} — teljes szöveg / full text`, '', `> ${plain(T.hu.home.desc)}`, `> ${SITE.phone} — ${SITE.email} — ${SITE.domain}`, ''];
+  const out = [`# ${SITE.name} ${T.hu.brandSub} — teljes szöveg / full text`, '', `> ${plain(T.hu.home.desc)}`, `> ${SITE.phone} — ${SITE.email} — ${SITE.domain}`, ''];
   const q = items => items.map(([a, b]) => `**${plain(a)}**\n${plain(b)}`).join('\n\n');
   const list = items => items.map(x => `- ${plain(x)}`).join('\n');
   for (const lang of ['hu', 'en']) {
