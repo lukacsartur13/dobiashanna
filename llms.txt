@@ -26,7 +26,7 @@ A honlap két nyelvű: magyarul a gyökérben, angolul az /en/ alatt. The site i
 ## Oldalak
 
 - [Kerttervezés Győr, Budapest, Balaton](https://honeygarden.hu/): Egyedi kerttervezés Győrben, Budapesten és a Balaton környékén: koncepcióterv, növénykiültetési terv, kiviteli kertterv és 3D látványterv. HoneyGarden kerttervezés – Dóbiás Hanna.
-- [Rólam – Dóbiás Hanna](https://honeygarden.hu/rolam.html): Dóbiás Hanna kerttervező: személyes, átlátható tervezés, a kert használóiból kiindulva.
+- [Rólam – Dóbiás Hanna](https://honeygarden.hu/rolam.html): Dóbiás Hanna tájrendező és kertépítő mérnök: hosszú távra tervezett, klímaadaptív magánkertek, a te életmódodból kiindulva.
 - [Ajánlatkérés](https://honeygarden.hu/ajanlatkeres.html): Kérj ajánlatot kerttervezésre: pár mondat a kertedről, és két munkanapon belül jelentkezem.
 
 ## English: services
@@ -45,7 +45,7 @@ A honlap két nyelvű: magyarul a gyökérben, angolul az /en/ alatt. The site i
 ## English: pages
 
 - [Garden Design in Győr, Budapest & Lake Balaton](https://honeygarden.hu/en/): Bespoke garden design in Győr, Budapest and around Lake Balaton: concept plan, planting plan, construction drawings and 3D visualisation. HoneyGarden garden design by Hanna Dóbiás.
-- [About Hanna Dóbiás](https://honeygarden.hu/en/about.html): Hanna Dóbiás, garden designer: personal, transparent design that starts from the people who use the garden.
+- [About Hanna Dóbiás](https://honeygarden.hu/en/about.html): Hanna Dóbiás, landscape and garden engineer: climate-adaptive private gardens designed for the long term, starting from how you live.
 - [Enquiry](https://honeygarden.hu/en/enquiry.html): Request a garden design quote: a few lines about your garden, and I’ll get back to you within two working days.
 
 ## Optional

@@ -123,7 +123,10 @@ function footer(t) {
 const BIZ_ID = `${SITE.domain}/#business`;
 const business = t => ({
   '@type': 'ProfessionalService', '@id': BIZ_ID, name: `${SITE.name} ${t.brandSub}`, url: `${SITE.domain}/`, logo: `${SITE.domain}/assets/img/logo.png`,
-  founder: { '@type': 'Person', name: SITE.designer[t.lang], jobTitle: t.lang === 'en' ? 'Garden designer' : 'Kerttervező' },
+  founder: {
+    '@type': 'Person', name: SITE.designer[t.lang], jobTitle: t.lang === 'en' ? 'Landscape and garden engineer' : 'Tájrendező és kertépítő mérnök',
+    alumniOf: { '@type': 'CollegeOrUniversity', name: t.lang === 'en' ? 'Hungarian University of Agriculture and Life Sciences' : 'Magyar Agrár- és Élettudományi Egyetem' },
+  },
   email: SITE.email, telephone: SITE.phone, knowsLanguage: ['hu', 'en'],
   description: t.home.desc,
   areaServed: REGION_KEYS.flatMap(k => t[k].schemaArea.map(([type, name]) => ({ '@type': type, name }))),

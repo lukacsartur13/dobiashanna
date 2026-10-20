@@ -109,7 +109,7 @@ const hu = {
     about: {
       eyebrow: 'Rólam',
       h: 'Szia, <em>Hanna vagyok.</em>',
-      p: ['Abban hiszek, hogy egy kert akkor jó, ha a benne élők [[szokásaiból]] nő ki – nem egy katalógusból. Ezért minden tervet azzal kezdek, hogy megismerlek: hogyan telik egy reggeled, hol iszod a kávét, kell-e hely a biciklinek, a kutyának, a nagy családi ebédnek.', 'A tervezésben a telek adottságait, a fenntartható működést és a hosszú távú szépséget egyszerre tartom szem előtt. Olyan kertet szeretnék adni, amit nem kell félni használni.'],
+      p: ['Abban hiszek, hogy egy kert akkor jó, ha a benne élők [[szokásaiból]] nő ki – nem egy katalógusból. Ezért minden tervet azzal kezdek, hogy megismerlek: hogyan telik egy reggeled, hol iszod a kávét, kell-e hely a biciklinek, a kutyának, a nagy családi ebédnek.', 'Tájrendező és kertépítő mérnökként a telek adottságait, a klímához alkalmazkodó növényválasztást és a hosszú távú szépséget egyszerre tartom szem előtt. Olyan kertet szeretnék adni, amit nem kell félni használni.'],
       link: 'Bővebben rólam', portrait: 'Dóbiás Hanna kerttervező munka közben, előtte egy kertterv',
     },
     faq: {
@@ -198,12 +198,12 @@ const hu = {
   },
   about: {
     title: 'Rólam – Dóbiás Hanna | HoneyGarden kerttervezés',
-    desc: 'Dóbiás Hanna kerttervező: személyes, átlátható tervezés, a kert használóiból kiindulva.',
+    desc: 'Dóbiás Hanna tájrendező és kertépítő mérnök: hosszú távra tervezett, klímaadaptív magánkertek, a te életmódodból kiindulva.',
     eyebrow: 'Rólam',
     h1: 'Szia, <em>Hanna vagyok.</em>',
     lead: 'Kerteket tervezek embereknek – nem fordítva.',
-    p: ['A kertek iránti szeretetem nem egy íróasztalnál kezdődött, hanem kint, a földben. Ma is ott a legjobb gondolkodni: egy telken állva, napfényben, szélben, a szomszéd diófájának árnyékában.', 'Tervezőként azt keresem, hogyan lehet egy kertet úgy kialakítani, hogy ne kelljen alkalmazkodni hozzá. Hogy a reggeli kávé helye ott legyen, ahol a nap először odasüt. Hogy a gyerek labdája ne a levendulásban kössön ki. Hogy ősszel is legyen miért kinézni az ablakon.', 'Minden tervet személyesen készítek, az első bejárástól az utolsó tervlapig. Így pontosan tudod, kivel dolgozol – és én is pontosan tudom, kinek tervezek.'],
-    values: { h: 'Amiben <em>hiszek</em>', items: [['A kert a használatból nő ki', 'Nem a trendekből indulok, hanem abból, hogyan élsz. A forma ebből következik.'], ['Fenntartható, nem fenntartásigényes', 'Helyhez illő növények, átgondolt vízhasználat, kevesebb vegyszer és kevesebb munka.'], ['Őszinte, átlátható folyamat', 'Írásos ajánlat, világos ütemezés, és ha valamire nincs szükséged, azt is megmondom.']] },
+    p: ['Tájrendező és kertépítő mérnök vagyok, a Magyar Agrár- és Élettudományi Egyetemen szereztem kitüntetéses diplomát. Magánkerteket tervezek, és mindegyiknél ugyanazt keresem: a szépség, a jó használhatóság és a hosszú távú fenntarthatóság egyensúlyát.', 'A klímaváltozással egyre gyakoribbak a forró, csapadékszegény nyarak, és sok korábban bevált növény már nehezen bírja őket. Ezért tudatosan, a telek adottságaihoz igazodva választok klímaadaptív fajokat, amelyek nem igényelnek folyamatos beavatkozást. Nem néhány évre szóló látványt tervezek, hanem olyan kertet, amely évtizedek múlva is megőrzi értékét, karakterét és szépségét.', 'Minden kert más, ahogy a gazdája is. Ezért a tervezést mindig azzal kezdem, hogy megismerem az elképzeléseidet és az életmódodat. Hiszem, hogy egy jól megtervezett kert nem csupán dísz, hanem a mindennapi kikapcsolódás, a feltöltődés és a természethez való visszatalálás helye.'],
+    values: { h: 'Amiben <em>hiszek</em>', items: [['A kert a használatból nő ki', 'Nem a trendekből indulok, hanem abból, hogyan élsz. A forma ebből következik.'], ['Fenntartható, nem fenntartásigényes', 'Klímaadaptív, helyhez illő növények, átgondolt vízhasználat – kevesebb vegyszer és kevesebb munka.'], ['Őszinte, átlátható folyamat', 'Írásos ajánlat, világos ütemezés, és ha valamire nincs szükséged, azt is megmondom.']] },
     portrait: 'Dóbiás Hanna kerttervező munka közben, előtte egy kertterv',
   },
   contact: {
@@ -305,7 +305,7 @@ const en = {
     about: {
       eyebrow: 'About',
       h: 'Hi, <em>I’m Hanna.</em>',
-      p: ['I believe a garden is good when it grows out of the [[habits]] of the people who live in it – not out of a catalogue. That’s why every design starts with getting to know you: how your mornings go, where you drink your coffee, whether there needs to be room for bikes, the dog, the big family lunch.', 'When designing I keep the character of the site, sustainable upkeep and long-term beauty in view at the same time. I want to give you a garden you’re never afraid to use.'],
+      p: ['I believe a garden is good when it grows out of the [[habits]] of the people who live in it – not out of a catalogue. That’s why every design starts with getting to know you: how your mornings go, where you drink your coffee, whether there needs to be room for bikes, the dog, the big family lunch.', 'As a landscape and garden engineer I keep the character of the site, climate-adaptive planting and long-term beauty in view at the same time. I want to give you a garden you’re never afraid to use.'],
       link: 'More about me', portrait: 'Hanna Dóbiás, garden designer, at work with a garden plan in front of her',
     },
     faq: {
@@ -394,12 +394,12 @@ const en = {
   },
   about: {
     title: 'About Hanna Dóbiás | HoneyGarden garden design',
-    desc: 'Hanna Dóbiás, garden designer: personal, transparent design that starts from the people who use the garden.',
+    desc: 'Hanna Dóbiás, landscape and garden engineer: climate-adaptive private gardens designed for the long term, starting from how you live.',
     eyebrow: 'About',
     h1: 'Hi, <em>I’m Hanna.</em>',
     lead: 'I design gardens for people – not the other way round.',
-    p: ['My love of gardens didn’t begin at a desk, but outside, in the soil. It’s still the best place to think: standing on a plot, in sun and wind, in the shade of the neighbour’s walnut tree.', 'As a designer I look for ways to shape a garden so you don’t have to adapt to it. So that the morning coffee spot is where the sun reaches first. So that the kids’ ball doesn’t end up in the lavender. So that there’s a reason to look out of the window in autumn too.', 'I make every design personally, from the first visit to the last sheet. So you know exactly who you’re working with – and I know exactly who I’m designing for.'],
-    values: { h: 'What I <em>believe in</em>', items: [['A garden grows out of use', 'I don’t start from trends, but from how you live. The form follows from that.'], ['Sustainable, not high-maintenance', 'Plants that suit the site, thoughtful water use, fewer chemicals and less work.'], ['An honest, transparent process', 'A written quote, a clear schedule – and if you don’t need something, I’ll tell you.']] },
+    p: ['I’m a landscape and garden engineer, and graduated with honours from the Hungarian University of Agriculture and Life Sciences. I design private gardens, and in every one I look for the same thing: a balance of beauty, everyday usefulness and long-term sustainability.', 'With climate change, hot and dry summers are becoming more frequent, and many plants that used to do well now struggle. So I deliberately choose climate-adaptive species that suit the conditions of the site and don’t need constant intervention. I don’t design a show that lasts a few years, but a garden that keeps its value, character and beauty for decades.', 'Every garden is different, just like its owner. That’s why I always start by getting to know your ideas and the way you live. I believe a well-designed garden isn’t just decoration, but a place to unwind, recharge and reconnect with nature every day.'],
+    values: { h: 'What I <em>believe in</em>', items: [['A garden grows out of use', 'I don’t start from trends, but from how you live. The form follows from that.'], ['Sustainable, not high-maintenance', 'Climate-adaptive plants that suit the site, thoughtful water use – fewer chemicals and less work.'], ['An honest, transparent process', 'A written quote, a clear schedule – and if you don’t need something, I’ll tell you.']] },
     portrait: 'Hanna Dóbiás, garden designer, at work with a garden plan in front of her',
   },
   contact: {
@@ -418,7 +418,7 @@ const en = {
 
 Object.assign(hu, {
   ui: { scroll: 'Görgess tovább', view: 'Megnézem', plan: 'Tervezzük meg', items: 'tétel', you: 'Ez te vagy?', drag: 'Húzd', faqNote: 'Nem találod a választ? Írj nyugodtan, szívesen válaszolok.', whoH: 'Neked szól, <em>ha…</em>', layers: 'réteg' },
-  card: [['NÉV', 'Dóbiás Hanna'], ['SZAKTERÜLET', 'Kerttervezés'], ['TERVTÍPUSOK', '4'], ['KAPCSOLAT', SITE.email]],
+  card: [['NÉV', 'Dóbiás Hanna'], ['VÉGZETTSÉG', 'Tájrendező és kertépítő mérnök (MATE)'], ['SZAKTERÜLET', 'Magánkertek tervezése'], ['KAPCSOLAT', SITE.email]],
 });
 Object.assign(hu.home, {
   meta: ['KT-01 · Alaprajz', 'M 1:100', '47° É · 19° K'],
@@ -439,7 +439,7 @@ Object.assign(hu.home, {
 
 Object.assign(en, {
   ui: { scroll: 'Keep scrolling', view: 'View', plan: 'Let’s plan it', items: 'items', you: 'Sound like you?', drag: 'Drag', faqNote: 'Can’t find your answer? Just write – I’m happy to help.', whoH: 'It’s for you <em>if…</em>', layers: 'layers' },
-  card: [['NAME', 'Hanna Dóbiás'], ['FIELD', 'Garden design'], ['PLAN TYPES', '4'], ['CONTACT', SITE.email]],
+  card: [['NAME', 'Hanna Dóbiás'], ['DEGREE', 'Landscape and garden engineer (MATE)'], ['FIELD', 'Private garden design'], ['CONTACT', SITE.email]],
 });
 Object.assign(en.home, {
   meta: ['GP-01 · Site plan', '1:100', '47° N · 19° E'],
