@@ -13,7 +13,7 @@ A HTML-oldalak **generáltak**. Ne a `.html` fájlokat szerkeszd, hanem:
 | `src/svg.mjs` | Az összes SVG-rajz: alaprajz, buborékdiagram, metszet, 3D modell, virágzási naptár |
 | `build.mjs` | Oldalsablonok (fejléc, lábléc, szekciók) |
 | `assets/style.css`, `assets/main.js` | Stílus és animációk |
-| `assets/img/` | Fotók: `kert-hero.jpg` (a kezdőlap címe mögött), `hanna.jpg` (Rólam, íves keretben) |
+| `assets/img/` | Fotók: `kert-hero.jpg` (a kezdőlap címe mögött), `hanna.jpg` (Rólam, íves keretben); logók: `logo.png` (fekete GARDEN, világos háttérre – fejléc), `logo-light.png` (világos GARDEN, sötét háttérre – lábléc) |
 
 Módosítás után:
 

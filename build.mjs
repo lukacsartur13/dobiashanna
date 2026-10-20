@@ -28,7 +28,8 @@ const GLYPH = {
   mail: '<svg viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12"/><path d="M4 7 L12 13 L20 7"/></svg>',
   phone: '<svg viewBox="0 0 24 24"><path d="M6 4 H10 L11.5 8.5 L9 10 C10 12.5 11.5 14 14 15 L15.5 12.5 L20 14 V18 C20 19 19 20 18 20 C10 19.5 4.5 14 4 6 C4 5 5 4 6 4 Z"/></svg>',
 };
-const brand = (t, cls = '') => `<a class="brand ${cls}" href="${link(t.lang, 'home')}" aria-label="${SITE.name} ${t.brandSub}">${S.LOGO}<span class="brand__name">${SITE.name}</span><span class="brand__sub">${t.brandSub}</span></a>`;
+// logo.png: black GARDEN for light grounds; logo-light.png: pale GARDEN for the dark footer.
+const brand = (t, cls = '', file = 'logo.png') => `<a class="brand ${cls}" href="${link(t.lang, 'home')}"><img class="brand__logo" src="${asset(t.lang)}img/${file}" alt="${SITE.name}" width="724" height="300"><span class="brand__sub">${t.brandSub}</span></a>`;
 const ic = (g = 'arrow', cls = '') => `<span class="ic ${cls}" aria-hidden="true"><span class="ic__in">${GLYPH[g]}${GLYPH[g]}</span></span>`;
 const pm = '<span class="ic ic--pm" aria-hidden="true"><i></i><i></i></span>';
 const btn = (href, label, { cls = '', g = 'arrow', attrs = '' } = {}) =>
@@ -105,7 +106,7 @@ function footer(t) {
   return `<footer class="ftr">
   <div class="wrap ftr__grid">
     <div class="ftr__col ftr__brand">
-      ${brand(t, 'brand--lg')}
+      ${brand(t, 'brand--lg', 'logo-light.png')}
       <p>${t.footer.tag}</p>
     </div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.pages}</p><ul>${SERVICE_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t.services[k].title}</a></li>`).join('')}<li><a class="ulink" href="${L('about')}">${t.nav.about}</a></li><li><a class="ulink" href="${L('contact')}">${t.nav.cta}</a></li></ul></div>
@@ -121,7 +122,7 @@ function footer(t) {
 // ------------------------------------------------------------ STRUCTURED DATA
 const BIZ_ID = `${SITE.domain}/#business`;
 const business = t => ({
-  '@type': 'ProfessionalService', '@id': BIZ_ID, name: `${SITE.name} ${t.brandSub}`, url: `${SITE.domain}/`,
+  '@type': 'ProfessionalService', '@id': BIZ_ID, name: `${SITE.name} ${t.brandSub}`, url: `${SITE.domain}/`, logo: `${SITE.domain}/assets/img/logo.png`,
   founder: { '@type': 'Person', name: SITE.designer[t.lang], jobTitle: t.lang === 'en' ? 'Garden designer' : 'Kerttervező' },
   email: SITE.email, telephone: SITE.phone, knowsLanguage: ['hu', 'en'],
   description: t.home.desc,

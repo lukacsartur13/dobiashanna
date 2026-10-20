@@ -131,12 +131,12 @@ details[open] .ic--pm::before{transform:none}
 .hdr{position:fixed;inset:0 0 auto;z-index:50;height:var(--hdr);display:flex;align-items:center;gap:2rem;padding-inline:var(--gut);background:var(--band);box-shadow:0 1px 0 var(--rule-2);transition:box-shadow .4s,transform .6s var(--ease)}
 .hdr.is-scrolled{box-shadow:0 1px 0 var(--rule-2),0 12px 30px -18px rgba(26,29,22,.35)}
 .hdr.is-hidden{transform:translateY(-101%)}
-.brand{flex:none;display:flex;align-items:center;gap:.65rem;text-decoration:none;line-height:1}
-.logo-mark{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.5;transition:transform 1.2s var(--ease)}
-.brand:hover .logo-mark{transform:rotate(120deg)}
+.brand{flex:none;display:flex;align-items:center;gap:.9rem;text-decoration:none;line-height:1}
+.brand__logo{height:60px;width:auto;transition:transform .8s var(--ease)}
+.brand:hover .brand__logo{transform:rotate(-2deg) scale(1.03)}
+.logo-mark{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.5}
 .logo-mark .lm-x{stroke-width:1}
-.brand__name{font-family:var(--f-serif);font-size:1.65rem;letter-spacing:-.01em;white-space:nowrap}
-.brand__sub{color:var(--ink-2);font-size:1rem;font-weight:400;line-height:1.3;white-space:nowrap;padding-left:.7rem;border-left:1px solid var(--rule-2)}
+.brand__sub{color:var(--ink-2);font-size:1rem;font-weight:400;line-height:1.3;white-space:nowrap;padding-left:.9rem;border-left:1px solid var(--rule-2)}
 .nav{margin-left:auto}
 .nav__list{display:flex;gap:1.5rem;font-size:.92rem;font-weight:500;text-transform:lowercase}
 /* Nav: a dot grows in and pushes the word aside. */
@@ -776,9 +776,9 @@ details[open] .ic--pm::before{transform:none}
 .ftr__grid:has(.ftr__col:hover) .ftr__col:hover ~ .ftr__col{transform:translateX(1.4rem)}
 .ftr__brand p{color:var(--on-dark-mute);max-width:24em;margin-top:1.4rem}
 .ftr .lbl{color:var(--clay-lift)}
-.brand--lg .brand__name{font-size:2rem}
-.brand--lg .logo-mark{width:44px;height:44px;color:var(--sage)}
-.brand--lg .brand__sub{font-size:1.15rem;color:var(--on-dark-mute);border-color:var(--rule-dark)}
+.brand--lg{display:inline-flex;flex-direction:column;align-items:flex-start;gap:.9rem}
+.brand--lg .brand__logo{height:96px}
+.brand--lg .brand__sub{font-size:1.15rem;color:var(--on-dark-mute);border:0;padding:0}
 .ftr ul li{margin-bottom:.55rem}
 .ftr ul a{color:var(--on-dark-mute);transition:color .3s}
 .ftr ul a:hover{color:var(--on-dark)}
@@ -803,17 +803,18 @@ details[open] .ic--pm::before{transform:none}
   .swatches{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:1023px){
-  .nav{display:none}
-  .burger{display:flex}
-  .hdr__end{margin-left:auto}
-  .hdr__cta{display:flex}
+  /* tighter nav: Windows laptops at 150–200% scaling land here and must still see the menu */
+  .hdr{gap:1.25rem}
+  .nav__list{gap:1.1rem;font-size:.88rem}
+  .brand{gap:.7rem}
+  .brand__logo{height:52px}
+  .brand__sub{padding-left:.7rem;font-size:.9rem}
 }
 @media (max-width:900px){
   :root{--hdr:66px}
-  /* brand stacks: HoneyGarden over kerttervezés */
-  .brand{display:grid;grid-template-columns:auto auto;column-gap:.55rem;row-gap:.2rem;align-items:center}
-  .brand .logo-mark{grid-row:1/3}
-  .brand__sub{grid-column:2;border:0;padding:0;font-size:.74rem;letter-spacing:.04em;line-height:1;color:var(--mute)}
+  .brand{gap:.6rem}
+  .brand__logo{height:48px}
+  .brand__sub{padding-left:.6rem;font-size:.8rem;letter-spacing:.02em;color:var(--mute)}
   .hero__meta{grid-template-columns:1fr 1fr}
   .hero__meta span:nth-child(3){border-left:0;padding-left:0}
   .hero__grid,.process__grid,.about-t__grid,.faq__grid,.deliv__grid,.shero__grid,.ab-hero__grid,.contact__grid,.stage__head,.svc__top,.who__top,.sp__head{grid-template-columns:1fr}
@@ -880,6 +881,12 @@ details[open] .ic--pm::before{transform:none}
   .steps3--4 li:nth-child(n){margin-top:0}
   .ftr__grid{grid-template-columns:1fr 1fr}
 }
+@media (max-width:859px){
+  .nav{display:none}
+  .burger{display:flex}
+  .hdr__end{margin-left:auto}
+  .hdr__cta{display:flex}
+}
 @media (max-width:600px){
   .hero__meta{grid-template-columns:1fr}
   .hero__meta span:not(.lbl){display:none}
@@ -893,7 +900,7 @@ details[open] .ic--pm::before{transform:none}
   .swatches{grid-template-columns:repeat(2,1fr)}
   .swatches li:nth-child(even){margin-top:0}
   .hdr__cta{display:none}
-  .brand__name{font-size:1.25rem}
+  .brand__logo{height:44px}
   .deliv__list li{grid-template-columns:44px 1fr auto;padding-inline:0}
   .register td,.register th{padding:.9rem .6rem}
   .register td:first-child{width:auto}
