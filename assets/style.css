@@ -171,7 +171,7 @@ details[open] .ic--pm::before{transform:none}
 .menu.is-open .menu__list li{animation:menuIn .7s var(--ease-out) both}
 .menu.is-open .menu__list li:nth-child(2){animation-delay:.04s}.menu.is-open .menu__list li:nth-child(3){animation-delay:.08s}.menu.is-open .menu__list li:nth-child(4){animation-delay:.12s}.menu.is-open .menu__list li:nth-child(5){animation-delay:.16s}.menu.is-open .menu__list li:nth-child(6){animation-delay:.2s}
 /* service pages: a slowly bobbing arrow says there is more below the hero */
-.scrolltip{position:fixed;left:50%;bottom:clamp(16px,3vh,32px);z-index:40;translate:-50% 0;text-decoration:none;color:var(--ink);background:var(--paper-hi);border-radius:50%;box-shadow:0 10px 24px -12px rgba(26,29,22,.45);animation:bob 2.4s var(--ease) infinite;transition:opacity .5s,visibility .5s}
+.scrolltip{position:fixed;left:50%;bottom:clamp(16px,3vh,32px);z-index:40;translate:-50% 0;filter:drop-shadow(0 10px 18px rgba(26,29,22,.3));animation:bob 2.4s var(--ease) infinite;transition:opacity .5s,visibility .5s}
 .scrolltip.is-gone{opacity:0;visibility:hidden}
 @keyframes bob{50%{transform:translateY(8px)}}
 @keyframes menuIn{from{opacity:0;transform:translateY(24px)}}

@@ -389,7 +389,7 @@ function service(t, key) {
       <div class="shero__art"><div class="frame">${S.PLUS4}${heroArt(t, key)}</div></div>
     </div>
   </div>
-  <a class="scrolltip" href="#tovabb" data-scrolltip aria-label="${t.ui.scroll}">${ic('down')}</a>
+  <a class="btn btn--sm scrolltip" href="#tovabb" data-scrolltip aria-label="${t.ui.scroll}">${ic('down')}</a>
 </section>
 ${S.band()}
 
