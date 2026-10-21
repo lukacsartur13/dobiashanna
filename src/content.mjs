@@ -35,7 +35,7 @@ const hu = {
   footer: {
     tag: 'Személyre szabott kerttervek családi házakhoz, nyaralókhoz és kisebb közösségi terekhez.',
     pages: 'Oldalak', contact: 'Kapcsolat',
-    legal: 'Minden jog fenntartva.', privacy: 'Adatkezelés', top: 'Vissza a tetejére',
+    legal: 'Minden jog fenntartva.', credit: 'Készítette:', privacy: 'Adatkezelés', top: 'Vissza a tetejére',
   },
   cta: {
     eyebrow: 'Következő lépés',
@@ -231,7 +231,7 @@ const en = {
   footer: {
     tag: 'Bespoke garden designs for family homes, holiday houses and small community spaces.',
     pages: 'Pages', contact: 'Contact',
-    legal: 'All rights reserved.', privacy: 'Privacy', top: 'Back to top',
+    legal: 'All rights reserved.', credit: 'Made by', privacy: 'Privacy', top: 'Back to top',
   },
   cta: {
     eyebrow: 'Next step',

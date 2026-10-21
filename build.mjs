@@ -118,7 +118,7 @@ function footer(t) {
     <div class="ftr__col"><p class="lbl"><i></i>${t.regionsUI.label}</p><ul>${REGION_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t[k].name}</a></li>`).join('')}</ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.contact}</p><ul><li><a class="ulink" href="tel:${SITE.phoneHref}">${SITE.phone}</a></li><li><a class="ulink" href="mailto:${SITE.email}">${MAIL}</a></li></ul></div>
   </div>
-  <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name} ${t.brandSub}. ${t.footer.legal}</span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
+  <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name} ${t.brandSub}. ${t.footer.legal}</span><span>${t.footer.credit} <a class="ulink" href="https://stratosweb.hu" target="_blank" rel="noopener">Stratos Webdesign</a></span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
   <p class="ftr__giant" aria-hidden="true">${t.brandSub}</p>
 </footer>`;
 }
