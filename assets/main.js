@@ -14,6 +14,10 @@
   };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
+  /* service pages: the scroll arrow fades once the reader is on the way */
+  const tip = document.querySelector('[data-scrolltip]');
+  if (tip) { const fade = () => tip.classList.toggle('is-gone', scrollY > innerHeight * .5); addEventListener('scroll', fade, { passive: true }); fade(); }
+
   /* mobile menu */
   const burger = document.querySelector('[data-burger]'), menu = document.querySelector('[data-menu]');
   const setMenu = open => {

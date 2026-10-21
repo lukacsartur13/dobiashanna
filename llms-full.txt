@@ -24,17 +24,17 @@ A kertépítés legdrágább hibái nem a kivitelezéskor születnek, hanem jóv
 ### Szolgáltatások, amelyek egymásra épülnek.
 A tervtípusok külön is kérhetők, de együtt adják a legtöbbet. A felmérés után megmondom, melyikre van valóban szükséged – és melyikre nincs.
 
-- **Koncepcióterv** – A kert váza: zónák, kapcsolatok, hangulat – még növények nélkül. (https://honeygarden.hu/koncepcioterv.html)
-- **Növénykiültetési terv** – Fajra és darabszámra pontos ültetés, ami minden évszakban ad valamit. (https://honeygarden.hu/novenykiultetesi-terv.html)
-- **Kiviteli kertterv** – Méretezett rajzok, metszetek, anyaglisták – a kivitelező nyelvén. (https://honeygarden.hu/kiviteli-kertterv.html)
-- **3D látványterv** – Sétálj be a kertbe, mielőtt egyetlen kapavágás megtörténne. (https://honeygarden.hu/3d-latvanyterv.html)
+- **Koncepcióterv** – A kert váza: zónák, kapcsolatok, hangulat – még növények nélkül. (https://honeygarden.hu/koncepcioterv)
+- **Növénykiültetési terv** – Fajra és darabszámra pontos ültetés, ami minden évszakban ad valamit. (https://honeygarden.hu/novenykiultetesi-terv)
+- **Kiviteli kertterv** – Méretezett rajzok, metszetek, anyaglisták – a kivitelező nyelvén. (https://honeygarden.hu/kiviteli-kertterv)
+- **3D látványterv** – Sétálj be a kertbe, mielőtt egyetlen kapavágás megtörténne. (https://honeygarden.hu/3d-latvanyterv)
 
 ### Ahol tervezek
 Helyszíni bejárással Győrben és Győr-Moson-Sopron megyében, Budapesten és az agglomerációban, valamint a Balaton környékén – online konzultációval pedig az ország bármely részén.
 
-- **Győr és Győr-Moson-Sopron** – Rendezett, szélvédett, jól kivitelezhető családi házas kertek a Kisalföldön. (https://honeygarden.hu/kerttervezes-gyor.html)
-- **Budapest és agglomeráció** – Kis és lejtős telkek, új építésű házak – élhető kert a város mellett. (https://honeygarden.hu/kerttervezes-budapest.html)
-- **Balaton környéke** – Nyaralók és második otthonok – látványos kert, kevés gondozással. (https://honeygarden.hu/kerttervezes-balaton.html)
+- **Győr és Győr-Moson-Sopron** – Rendezett, szélvédett, jól kivitelezhető családi házas kertek a Kisalföldön. (https://honeygarden.hu/kerttervezes-gyor)
+- **Budapest és agglomeráció** – Kis és lejtős telkek, új építésű házak – élhető kert a város mellett. (https://honeygarden.hu/kerttervezes-budapest)
+- **Balaton környéke** – Nyaralók és második otthonok – látványos kert, kevés gondozással. (https://honeygarden.hu/kerttervezes-balaton)
 
 ### Öt lépés, semmi meglepetés.
 1. **Ismerkedés és felmérés** – Kimegyek a helyszínre, megnézzük a telket, a fényeket, a talajt és a meglévő növényeket. Közben arról beszélgetünk, hogyan szeretnéd használni a kertet – hétköznap és ünnepnap.
@@ -63,7 +63,7 @@ Helyszíni bejárással Győrben és Győr-Moson-Sopron megyében, Budapesten é
 Töltsd ki az ajánlatkérő űrlapot pár mondattal a kertedről, és két munkanapon belül jelentkezem időpont-egyeztetéssel.
 
 ## Koncepcióterv
-URL: https://honeygarden.hu/koncepcioterv.html
+URL: https://honeygarden.hu/koncepcioterv
 
 *Először a nagy egész.* A koncepcióterv a kert váza. Eldönti, mi hová kerül, hogyan kapcsolódnak egymáshoz a terek, merre vezet az út, és milyen hangulata lesz az egésznek. Erre épül minden további terv.
 
@@ -99,7 +99,7 @@ Jellemzően két-három irányt vázolok fel, ezekből választunk és finomítu
 A koncepció azt mondja meg, mi hová kerül. A kiviteli terv azt, hogy pontosan milyen méretben, anyagból és szinten.
 
 ## Növénykiültetési terv
-URL: https://honeygarden.hu/novenykiultetesi-terv.html
+URL: https://honeygarden.hu/novenykiultetesi-terv
 
 *Minden évszakra jusson valami.* Fajra, fajtára és darabszámra pontos ültetési terv, ami a telek talajához, fényviszonyaihoz és a gondozásra szánt idődhöz igazodik. Szép az első nyáron – és tíz év múlva is.
 
@@ -135,7 +135,7 @@ Igen – ez az egyik leggyakoribb kérés. A növényválasztás a gondozásra s
 Szívesen, és sokszor ezt is javaslom: ellenállóbbak, és jobban segítik a kerti élővilágot.
 
 ## Kiviteli kertterv
-URL: https://honeygarden.hu/kiviteli-kertterv.html
+URL: https://honeygarden.hu/kiviteli-kertterv
 
 *Méret, szint, anyag – pontosan.* A kiviteli terv a kivitelező nyelve. Méretezett rajzok, metszetek és anyaglisták, amelyekből pontosan árazni és építeni lehet – így a kert úgy valósul meg, ahogy elképzelted.
 
@@ -171,13 +171,13 @@ A kertépítési munkák többsége nem engedélyköteles. Ha mégis az, a szük
 Az öntözési igényt és zónákat a tervben jelölöm; a részletes öntözéstervet szakkivitelezővel közösen készítjük.
 
 ## 3D látványterv
-URL: https://honeygarden.hu/3d-latvanyterv.html
+URL: https://honeygarden.hu/3d-latvanyterv
 
 *Sétálj be, mielőtt megépül.* Valósághű látványtervek, amelyeken a kivitelezés előtt láthatod az arányokat, anyagokat és a kert hangulatát – különböző napszakokban és évszakokban.
 
 ### Mit kapsz?
 - 3D modell a telekről és az épületről
-- 4–6 kiemelt nézet nagy felbontásban
+- 3–4 kiemelt nézet nagy felbontásban
 - Madártávlati áttekintő kép
 - Anyag- és színváltozatok összehasonlítása
 - Évszakos vagy esti hangulatkép igény szerint
@@ -201,13 +201,13 @@ Váltogasd a nézetet és az évszakot a fenti modellen. A valódi látványterv
 Igen, a látványterv a kész koncepcióra épül – a 3D a döntés eszköze, nem a kiindulópontja.
 
 **Hány képet kapok?**
-Jellemzően 4–6 kidolgozott nézetet, igény szerint madártávlati és évszakos képekkel.
+Jellemzően 3–4 kidolgozott nézetet, igény szerint madártávlati és évszakos képekkel.
 
 **Videót vagy bejárást is készítesz?**
 Kérésre rövid körbejáró animáció is készülhet. Ezt az ajánlatban külön jelzem.
 
 ## Kerttervezés Győrben és Győr-Moson-Sopron megyében
-URL: https://honeygarden.hu/kerttervezes-gyor.html
+URL: https://honeygarden.hu/kerttervezes-gyor
 
 *Rendezett kert a Kisalföld szelében is.* Egyedi kertterveket készítek Győrben, Mosonmagyaróváron, Sopronban és a megye településein – családi házakhoz, új építésű otthonokhoz és megújuló kertekhez. A cél egy átgondolt, jól kivitelezhető és hosszú távon is működő kert, amely a ház karakteréhez és a telek adottságaihoz illeszkedik.
 
@@ -229,10 +229,10 @@ A megye új építésű lakóövezeteiben – Győr környékén, Győrújbarát
 ### Milyen kertterv készülhet Győrben?
 A projekt céljától függően választhatsz tervezési szintet – a gyors irányadástól a részletes dokumentációig. A tervtípusok külön is kérhetők, de együtt adják a legtöbbet.
 
-- **Koncepcióterv** – A kert szerkezete, zónái és hangulata – minden jó kertterv alapja. (https://honeygarden.hu/koncepcioterv.html)
-- **Növénykiültetési terv** – Fajra pontos, a kisalföldi klímához illő ültetési terv. (https://honeygarden.hu/novenykiultetesi-terv.html)
-- **Kiviteli kertterv** – Méretezett rajzok, amelyekből a helyi kivitelező pontosan áraz. (https://honeygarden.hu/kiviteli-kertterv.html)
-- **3D látványterv** – Valósághű képek a döntések előtt. (https://honeygarden.hu/3d-latvanyterv.html)
+- **Koncepcióterv** – A kert szerkezete, zónái és hangulata – minden jó kertterv alapja. (https://honeygarden.hu/koncepcioterv)
+- **Növénykiültetési terv** – Fajra pontos, a kisalföldi klímához illő ültetési terv. (https://honeygarden.hu/novenykiultetesi-terv)
+- **Kiviteli kertterv** – Méretezett rajzok, amelyekből a helyi kivitelező pontosan áraz. (https://honeygarden.hu/kiviteli-kertterv)
+- **3D látványterv** – Valósághű képek a döntések előtt. (https://honeygarden.hu/3d-latvanyterv)
 
 ### Hogyan zajlik a kerttervezés Győr-Moson-Sopron megyében?
 1. **Helyszíni bejárás** – Kimegyek a telekre, felmérem a talajt, a fényeket, a szélirányt és a meglévő növényeket, közben átbeszéljük az igényeidet.
@@ -265,7 +265,7 @@ Igen. A kiviteli terv pontos méretekkel és anyaglistával készül, így bárm
 Igen – sövényekkel, fasorokkal, pergolával és a terek tudatos elrendezésével a nyitott kisalföldi telken is kialakítható szélvédett, meghitt kertrész.
 
 ## Kerttervezés Budapesten és az agglomerációban
-URL: https://honeygarden.hu/kerttervezes-budapest.html
+URL: https://honeygarden.hu/kerttervezes-budapest
 
 *Kis telek, nagy kert – ha jól van megtervezve.* Egyedi kertterveket készítek Budapest kertes kerületeiben és az agglomeráció településein – Budaörstől Szentendréig, Gödöllőtől Érdig. Modern családi házakhoz, új építésű otthonokhoz és felújított ingatlanokhoz, ahol a kertnek egyszerre kell igényesnek és a mindennapokban is élhetőnek lennie.
 
@@ -287,10 +287,10 @@ Az agglomerációban sok új ház épül, ahol a kert az építkezés végén ü
 ### Milyen kerttervezési szolgáltatások érhetők el Budapesten?
 A tervezési szint a projekthez igazodik: indulhatsz egy gyors koncepcióval, vagy kérhetsz teljes, kivitelezésre kész tervcsomagot.
 
-- **Koncepcióterv** – A kert fő szerkezete és zónái – különösen fontos kis és lejtős telken. (https://honeygarden.hu/koncepcioterv.html)
-- **Növénykiültetési terv** – Városi klímát, árnyékot és szárazságot is bíró növényösszeállítás. (https://honeygarden.hu/novenykiultetesi-terv.html)
-- **Kiviteli kertterv** – Szintek, támfalak és burkolatok pontos rajzai a szervezett kivitelezéshez. (https://honeygarden.hu/kiviteli-kertterv.html)
-- **3D látványterv** – Közös kép a családnak a döntésekhez. (https://honeygarden.hu/3d-latvanyterv.html)
+- **Koncepcióterv** – A kert fő szerkezete és zónái – különösen fontos kis és lejtős telken. (https://honeygarden.hu/koncepcioterv)
+- **Növénykiültetési terv** – Városi klímát, árnyékot és szárazságot is bíró növényösszeállítás. (https://honeygarden.hu/novenykiultetesi-terv)
+- **Kiviteli kertterv** – Szintek, támfalak és burkolatok pontos rajzai a szervezett kivitelezéshez. (https://honeygarden.hu/kiviteli-kertterv)
+- **3D látványterv** – Közös kép a családnak a döntésekhez. (https://honeygarden.hu/3d-latvanyterv)
 
 ### Hogyan zajlik a kerttervezés Budapesten?
 1. **Igényfelmérés és bejárás** – Megnézem a telket, a szinteket, a fényviszonyokat és a szomszédos beépítést, és átbeszéljük, hogyan használnád a kertet.
@@ -323,7 +323,7 @@ Különösen. Kis telken minden négyzetméternek szerepe van, ezért itt a terv
 Igen, a koncepcióterv, a növénykiültetési terv, a kiviteli kertterv és a 3D látványterv külön és együtt is kérhető.
 
 ## Kerttervezés a Balaton környékén
-URL: https://honeygarden.hu/kerttervezes-balaton.html
+URL: https://honeygarden.hu/kerttervezes-balaton
 
 *Kert, ami akkor is rendben van, amikor nem vagy ott.* Egyedi kertterveket készítek balatoni nyaralókhoz, második otthonokhoz és állandó lakóházakhoz – az északi part köves lejtőitől a déli part homokos telkeiig. A balatoni kert sokszor pihenésre, vendégfogadásra és szezonális használatra készül: látványosnak kell lennie, mégis kevés törődéssel is jól kell tartania magát.
 
@@ -345,10 +345,10 @@ A szezonális használat miatt az is fontos szempont, hogy a kert hetekig rendez
 ### Elérhető kerttervezési szolgáltatások a Balatonnál
 A balatoni kerttervezés is több szinten kérhető, így a projekt a tulajdonos igényeihez és a megvalósítás üteméhez igazítható.
 
-- **Koncepcióterv** – A kert funkcionális és hangulati alapja – kilátással, terasszal, vendégtérrel. (https://honeygarden.hu/koncepcioterv.html)
-- **Növénykiültetési terv** – Szárazságtűrő, kevés gondozást igénylő, a balatoni tájhoz illő ültetés. (https://honeygarden.hu/novenykiultetesi-terv.html)
-- **Kiviteli kertterv** – Teraszok, lépcsők és támfalak pontos rajzai a lejtős telkekre. (https://honeygarden.hu/kiviteli-kertterv.html)
-- **3D látványterv** – Előre láthatod a kert hangulatát nyáron és ősszel is. (https://honeygarden.hu/3d-latvanyterv.html)
+- **Koncepcióterv** – A kert funkcionális és hangulati alapja – kilátással, terasszal, vendégtérrel. (https://honeygarden.hu/koncepcioterv)
+- **Növénykiültetési terv** – Szárazságtűrő, kevés gondozást igénylő, a balatoni tájhoz illő ültetés. (https://honeygarden.hu/novenykiultetesi-terv)
+- **Kiviteli kertterv** – Teraszok, lépcsők és támfalak pontos rajzai a lejtős telkekre. (https://honeygarden.hu/kiviteli-kertterv)
+- **3D látványterv** – Előre láthatod a kert hangulatát nyáron és ősszel is. (https://honeygarden.hu/3d-latvanyterv)
 
 ### Hogyan zajlik a tervezés a Balaton környékén?
 1. **Bejárás és igényfelmérés** – Helyszíni bejárással indulunk; ha ritkán jársz le, a további egyeztetés online, fotók és felmérési adatok alapján is mehet.
@@ -381,7 +381,7 @@ Igen, Balatonfüredtől Keszthelyig és Siófoktól Fonyódig a tó körüli tel
 Igen, mert előre megmutatja a kilátásokat, a teraszok és a növények arányait – mielőtt bármi megépülne.
 
 ## Szia, Hanna vagyok.
-URL: https://honeygarden.hu/rolam.html
+URL: https://honeygarden.hu/rolam
 
 *Kerteket tervezek embereknek – nem fordítva.*
 
@@ -397,7 +397,7 @@ Minden kert más, ahogy a gazdája is. Ezért a tervezést mindig azzal kezdem, 
 - **Őszinte, átlátható folyamat** – Írásos ajánlat, világos ütemezés, és ha valamire nincs szükséged, azt is megmondom.
 
 ## Mesélj a kertedről.
-URL: https://honeygarden.hu/ajanlatkeres.html
+URL: https://honeygarden.hu/ajanlatkeres
 
 Nem kell pontosnak lenned – elég pár mondat. A részleteket a helyszíni bejáráson közösen nézzük át.
 
@@ -429,17 +429,17 @@ The most expensive mistakes in garden building aren’t made during construction
 ### Services that build on each other.
 Each plan type can be ordered on its own, but together they give the most. After the survey I’ll tell you which ones you really need – and which you don’t.
 
-- **Concept plan** – The bones of the garden: zones, connections and mood – before a single plant. (https://honeygarden.hu/en/concept-plan.html)
-- **Planting plan** – Species-accurate planting that gives you something to look at every season. (https://honeygarden.hu/en/planting-plan.html)
-- **Construction plan** – Dimensioned drawings, sections and material lists – in the builder’s language. (https://honeygarden.hu/en/construction-plan.html)
-- **3D visualisation** – Walk through your garden before anyone picks up a spade. (https://honeygarden.hu/en/3d-visualisation.html)
+- **Concept plan** – The bones of the garden: zones, connections and mood – before a single plant. (https://honeygarden.hu/en/concept-plan)
+- **Planting plan** – Species-accurate planting that gives you something to look at every season. (https://honeygarden.hu/en/planting-plan)
+- **Construction plan** – Dimensioned drawings, sections and material lists – in the builder’s language. (https://honeygarden.hu/en/construction-plan)
+- **3D visualisation** – Walk through your garden before anyone picks up a spade. (https://honeygarden.hu/en/3d-visualisation)
 
 ### Where I design
 With site visits in Győr and Győr-Moson-Sopron county, in Budapest and its surroundings, and around Lake Balaton – and anywhere in Hungary through online consultation.
 
-- **Győr & Győr-Moson-Sopron** – Orderly, wind-sheltered, buildable family gardens on the Little Hungarian Plain. (https://honeygarden.hu/en/garden-design-gyor.html)
-- **Budapest & surroundings** – Small and sloping plots, new builds – liveable gardens next to the city. (https://honeygarden.hu/en/garden-design-budapest.html)
-- **Lake Balaton** – Holiday homes and second homes – a striking garden with little upkeep. (https://honeygarden.hu/en/garden-design-lake-balaton.html)
+- **Győr & Győr-Moson-Sopron** – Orderly, wind-sheltered, buildable family gardens on the Little Hungarian Plain. (https://honeygarden.hu/en/garden-design-gyor)
+- **Budapest & surroundings** – Small and sloping plots, new builds – liveable gardens next to the city. (https://honeygarden.hu/en/garden-design-budapest)
+- **Lake Balaton** – Holiday homes and second homes – a striking garden with little upkeep. (https://honeygarden.hu/en/garden-design-lake-balaton)
 
 ### Five steps, no surprises.
 1. **Meeting & site survey** – I visit the site and we look at the plot, the light, the soil and the existing plants. Meanwhile we talk about how you want to use the garden – on weekdays and holidays.
@@ -468,7 +468,7 @@ With site visits in Győr and Győr-Moson-Sopron county, in Budapest and its sur
 Fill in the enquiry form with a few sentences about your garden, and I’ll get back to you within two working days to arrange a time.
 
 ## Concept plan
-URL: https://honeygarden.hu/en/concept-plan.html
+URL: https://honeygarden.hu/en/concept-plan
 
 *The big picture first.* The concept plan is the skeleton of the garden. It decides what goes where, how spaces connect, where the path leads and what the whole will feel like. Every further plan builds on it.
 
@@ -504,7 +504,7 @@ Typically two or three directions, from which we choose and refine.
 The concept says what goes where. The construction plan says exactly how big, what material and at what level.
 
 ## Planting plan
-URL: https://honeygarden.hu/en/planting-plan.html
+URL: https://honeygarden.hu/en/planting-plan
 
 *Something for every season.* A planting plan accurate to species, cultivar and quantity, matched to your plot’s soil, light and the time you want to spend on upkeep. Beautiful in the first summer – and in ten years too.
 
@@ -540,7 +540,7 @@ Yes – it’s one of the most common requests. Plant choice follows the time yo
 Gladly, and I often suggest it: they’re more resilient and better for garden wildlife.
 
 ## Construction plan
-URL: https://honeygarden.hu/en/construction-plan.html
+URL: https://honeygarden.hu/en/construction-plan
 
 *Size, level, material – exactly.* The construction plan is your builder’s language. Dimensioned drawings, sections and material lists that can be priced and built precisely – so the garden turns out the way you imagined.
 
@@ -576,13 +576,13 @@ Most garden works don’t need a permit. If yours does, we handle it together wi
 I mark irrigation needs and zones in the plan; the detailed irrigation design is done together with a specialist installer.
 
 ## 3D visualisation
-URL: https://honeygarden.hu/en/3d-visualisation.html
+URL: https://honeygarden.hu/en/3d-visualisation
 
 *Walk in before it’s built.* Realistic visualisations showing proportions, materials and the mood of the garden before construction – at different times of day and in different seasons.
 
 ### What you get
 - 3D model of the plot and building
-- 4–6 key views in high resolution
+- 3–4 key views in high resolution
 - Bird’s-eye overview image
 - Comparison of material and colour options
 - Seasonal or evening mood image on request
@@ -606,13 +606,13 @@ Switch the view and the season on the model above. Real visualisations are far m
 Yes, the visualisation builds on the finished concept – 3D is a tool for deciding, not the starting point.
 
 **How many images do I get?**
-Typically 4–6 finished views, plus bird’s-eye and seasonal images on request.
+Typically 3–4 finished views, plus bird’s-eye and seasonal images on request.
 
 **Do you make videos or walkthroughs?**
 A short fly-around animation is possible on request. I’ll list it separately in the quote.
 
 ## Garden design in Győr and Győr-Moson-Sopron county
-URL: https://honeygarden.hu/en/garden-design-gyor.html
+URL: https://honeygarden.hu/en/garden-design-gyor
 
 *An orderly garden, even in the plain’s wind.* I create bespoke garden designs in Győr, Mosonmagyaróvár, Sopron and towns across the county – for family homes, new builds and gardens in need of renewal. The aim is a well-considered, buildable garden that works for years and suits both the house and the plot.
 
@@ -634,10 +634,10 @@ In the county’s newer residential areas – around Győr, in Győrújbarát, A
 ### Which garden plans can be made in Győr?
 Choose the level of design your project needs – from quick direction to full documentation. Plan types can be ordered separately, but together they give the most.
 
-- **Concept plan** – Structure, zones and mood – the basis of every good garden plan. (https://honeygarden.hu/en/concept-plan.html)
-- **Planting plan** – A species-accurate planting plan suited to the regional climate. (https://honeygarden.hu/en/planting-plan.html)
-- **Construction plan** – Dimensioned drawings a local contractor can price precisely. (https://honeygarden.hu/en/construction-plan.html)
-- **3D visualisation** – Realistic images before you decide. (https://honeygarden.hu/en/3d-visualisation.html)
+- **Concept plan** – Structure, zones and mood – the basis of every good garden plan. (https://honeygarden.hu/en/concept-plan)
+- **Planting plan** – A species-accurate planting plan suited to the regional climate. (https://honeygarden.hu/en/planting-plan)
+- **Construction plan** – Dimensioned drawings a local contractor can price precisely. (https://honeygarden.hu/en/construction-plan)
+- **3D visualisation** – Realistic images before you decide. (https://honeygarden.hu/en/3d-visualisation)
 
 ### How does garden design work in Győr-Moson-Sopron?
 1. **Site visit** – I visit the plot, assess soil, light, wind direction and existing plants, and we talk through what you need.
@@ -670,7 +670,7 @@ Yes. Construction drawings come with exact dimensions and material lists, so any
 Yes – hedges, tree rows, a pergola and a deliberate layout create a sheltered, intimate corner even on an open plot.
 
 ## Garden design in Budapest and its surroundings
-URL: https://honeygarden.hu/en/garden-design-budapest.html
+URL: https://honeygarden.hu/en/garden-design-budapest
 
 *Small plot, big garden – if it’s well planned.* I create bespoke garden designs in Budapest’s garden districts and the towns around the city – from Budaörs to Szentendre, from Gödöllő to Érd. For modern family homes, new builds and renovated properties where the garden must be refined and liveable at the same time.
 
@@ -692,10 +692,10 @@ Many new houses are built in the agglomeration, and the garden is left as an emp
 ### Which garden design services are available in Budapest?
 The level of design follows the project: start with a quick concept, or order a complete, build-ready package.
 
-- **Concept plan** – Main structure and zones – especially important on small or sloping plots. (https://honeygarden.hu/en/concept-plan.html)
-- **Planting plan** – Planting that copes with city climate, shade and drought. (https://honeygarden.hu/en/planting-plan.html)
-- **Construction plan** – Exact drawings of levels, retaining walls and paving for an organised build. (https://honeygarden.hu/en/construction-plan.html)
-- **3D visualisation** – A shared picture for the family to decide on. (https://honeygarden.hu/en/3d-visualisation.html)
+- **Concept plan** – Main structure and zones – especially important on small or sloping plots. (https://honeygarden.hu/en/concept-plan)
+- **Planting plan** – Planting that copes with city climate, shade and drought. (https://honeygarden.hu/en/planting-plan)
+- **Construction plan** – Exact drawings of levels, retaining walls and paving for an organised build. (https://honeygarden.hu/en/construction-plan)
+- **3D visualisation** – A shared picture for the family to decide on. (https://honeygarden.hu/en/3d-visualisation)
 
 ### How does garden design work in Budapest?
 1. **Brief and site visit** – I look at the plot, its levels, light and neighbouring buildings, and we discuss how you’d use the garden.
@@ -728,7 +728,7 @@ Especially. On a small plot every square metre counts, so a plan pays off most i
 Yes, concept, planting, construction and 3D plans can be ordered separately or together.
 
 ## Garden design around Lake Balaton
-URL: https://honeygarden.hu/en/garden-design-lake-balaton.html
+URL: https://honeygarden.hu/en/garden-design-lake-balaton
 
 *A garden that stays in shape while you’re away.* I create bespoke garden designs for holiday houses, second homes and year-round homes around Lake Balaton – from the stony slopes of the north shore to the sandy plots of the south. A Balaton garden is often made for rest, guests and seasonal use: it must look striking, yet hold its shape with little care.
 
@@ -750,10 +750,10 @@ Because of seasonal use, the garden must stay tidy for weeks without supervision
 ### Garden design services at Lake Balaton
 Balaton garden design can be ordered at several levels, so the project fits the owner’s needs and the pace of construction.
 
-- **Concept plan** – The functional and atmospheric base – with views, terrace and guest space. (https://honeygarden.hu/en/concept-plan.html)
-- **Planting plan** – Drought-tolerant, low-maintenance planting suited to the Balaton landscape. (https://honeygarden.hu/en/planting-plan.html)
-- **Construction plan** – Exact drawings of terraces, steps and retaining walls for sloping plots. (https://honeygarden.hu/en/construction-plan.html)
-- **3D visualisation** – See the garden’s mood in summer and autumn before it’s built. (https://honeygarden.hu/en/3d-visualisation.html)
+- **Concept plan** – The functional and atmospheric base – with views, terrace and guest space. (https://honeygarden.hu/en/concept-plan)
+- **Planting plan** – Drought-tolerant, low-maintenance planting suited to the Balaton landscape. (https://honeygarden.hu/en/planting-plan)
+- **Construction plan** – Exact drawings of terraces, steps and retaining walls for sloping plots. (https://honeygarden.hu/en/construction-plan)
+- **3D visualisation** – See the garden’s mood in summer and autumn before it’s built. (https://honeygarden.hu/en/3d-visualisation)
 
 ### How does design work around Lake Balaton?
 1. **Visit and brief** – We start with a site visit; if you rarely come down, further coordination can run online with photos and survey data.
@@ -786,7 +786,7 @@ Yes, from Balatonfüred to Keszthely and from Siófok to Fonyód, in towns all a
 Yes, it shows views, terraces and planting proportions in advance – before anything is built.
 
 ## Hi, I’m Hanna.
-URL: https://honeygarden.hu/en/about.html
+URL: https://honeygarden.hu/en/about
 
 *I design gardens for people – not the other way round.*
 
@@ -802,7 +802,7 @@ Every garden is different, just like its owner. That’s why I always start by g
 - **An honest, transparent process** – A written quote, a clear schedule – and if you don’t need something, I’ll tell you.
 
 ## Tell me about your garden.
-URL: https://honeygarden.hu/en/enquiry.html
+URL: https://honeygarden.hu/en/enquiry
 
 You don’t need to be precise – a few sentences are enough. We’ll go through the details together on the site visit.
 

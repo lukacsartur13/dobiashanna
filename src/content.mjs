@@ -6,8 +6,6 @@ export const SITE = {
   phone: '+36 20 591 2651',
   phoneHref: '+36205912651',
   email: 'honeygarden.tervezes@gmail.com',
-  instagram: 'https://instagram.com/', // TODO
-  facebook: 'https://facebook.com/',   // TODO
   domain: 'https://honeygarden.hu',
 };
 
@@ -36,7 +34,7 @@ const hu = {
   more: 'Részletek',
   footer: {
     tag: 'Személyre szabott kerttervek családi házakhoz, nyaralókhoz és kisebb közösségi terekhez.',
-    pages: 'Oldalak', contact: 'Kapcsolat', follow: 'Kövess',
+    pages: 'Oldalak', contact: 'Kapcsolat',
     legal: 'Minden jog fenntartva.', privacy: 'Adatkezelés', top: 'Vissza a tetejére',
   },
   cta: {
@@ -109,7 +107,7 @@ const hu = {
     about: {
       eyebrow: 'Rólam',
       h: 'Szia, <em>Hanna vagyok.</em>',
-      p: ['Abban hiszek, hogy egy kert akkor jó, ha a benne élők [[szokásaiból]] nő ki – nem egy katalógusból. Ezért minden tervet azzal kezdek, hogy megismerlek: hogyan telik egy reggeled, hol iszod a kávét, kell-e hely a biciklinek, a kutyának, a nagy családi ebédnek.', 'Tájrendező és kertépítő mérnökként a telek adottságait, a klímához alkalmazkodó növényválasztást és a hosszú távú szépséget egyszerre tartom szem előtt. Olyan kertet szeretnék adni, amit nem kell félni használni.'],
+      p: ['Abban hiszek, hogy egy kert akkor jó, ha a benne élők [[szokásaiból]] nő ki – nem egy katalógusból. Ezért minden tervet azzal kezdek, hogy megismerlek: hogyan telik egy reggeled, hol iszod a kávét, kell-e hely a biciklinek, a kutyának, a nagy családi ebédnek.', 'Tájrendező és kertépítő mérnökként a telek adottságait, a klímához alkalmazkodó növényválasztást és a hosszú távú szépséget egyszerre tartom szem előtt. Olyan kertet szeretnék adni, amit nem kell félni használni.', 'Nem néhány évre szóló látványt tervezek, hanem olyan kertet, amely évtizedek múlva is megőrzi értékét, karakterét és szépségét. Hiszem, hogy egy jól megtervezett kert nem csupán dísz, hanem a mindennapi kikapcsolódás, a feltöltődés és a természethez való visszatalálás helye.'],
       link: 'Bővebben rólam', portrait: 'Dóbiás Hanna kerttervező munka közben, előtte egy kertterv',
     },
     faq: {
@@ -186,7 +184,7 @@ const hu = {
     lead: 'Valósághű látványtervek, amelyeken a kivitelezés előtt láthatod az arányokat, anyagokat és a kert hangulatát – különböző napszakokban és évszakokban.',
     svg: { aria: 'Izometrikus kertmodell házzal, terasszal, tóval, pergolával és fákkal.', caption: 'AXONOMETRIA · KÖNNYŰ MODELL' },
     modes: ['Vonalrajz', 'Látványterv'], seasons: ['Nyár', 'Ősz', 'Tél'], modeL: 'Nézet', seasonL: 'Évszak',
-    deliv: ['3D modell a telekről és az épületről', '4–6 kiemelt nézet nagy felbontásban', 'Madártávlati áttekintő kép', 'Anyag- és színváltozatok összehasonlítása', 'Évszakos vagy esti hangulatkép igény szerint', 'Képek, amiket a családdal és a kivitelezővel is megoszthatsz'],
+    deliv: ['3D modell a telekről és az épületről', '3–4 kiemelt nézet nagy felbontásban', 'Madártávlati áttekintő kép', 'Anyag- és színváltozatok összehasonlítása', 'Évszakos vagy esti hangulatkép igény szerint', 'Képek, amiket a családdal és a kivitelezővel is megoszthatsz'],
     who: ['Nehéz alaprajzból elképzelni a teret', 'A családban többen döntenek, és közös kép kell', 'Anyagok, burkolatok vagy színek között választanál'],
     steps: [['Modellezés', 'A kész koncepció alapján felépítem a kert 3D modelljét.'], ['Nézetek', 'Közösen választjuk ki a legfontosabb nézőpontokat.'], ['Látványképek', 'Kidolgozott képek anyagokkal, növényekkel, fényekkel.']],
     special: {
@@ -194,7 +192,7 @@ const hu = {
       h: 'Vonalból <em>hangulat.</em>',
       p: 'Váltogasd a nézetet és az évszakot a fenti modellen. A valódi látványtervek ennél jóval részletesebbek – de az elv ugyanez: döntés még az építés előtt.',
     },
-    faq: [['Kell hozzá koncepcióterv?', 'Igen, a látványterv a kész koncepcióra épül – a 3D a döntés eszköze, nem a kiindulópontja.'], ['Hány képet kapok?', 'Jellemzően 4–6 kidolgozott nézetet, igény szerint madártávlati és évszakos képekkel.'], ['Videót vagy bejárást is készítesz?', 'Kérésre rövid körbejáró animáció is készülhet. Ezt az ajánlatban külön jelzem.']],
+    faq: [['Kell hozzá koncepcióterv?', 'Igen, a látványterv a kész koncepcióra épül – a 3D a döntés eszköze, nem a kiindulópontja.'], ['Hány képet kapok?', 'Jellemzően 3–4 kidolgozott nézetet, igény szerint madártávlati és évszakos képekkel.'], ['Videót vagy bejárást is készítesz?', 'Kérésre rövid körbejáró animáció is készülhet. Ezt az ajánlatban külön jelzem.']],
   },
   about: {
     title: 'Rólam – Dóbiás Hanna | HoneyGarden kerttervezés',
@@ -232,7 +230,7 @@ const en = {
   more: 'Details',
   footer: {
     tag: 'Bespoke garden designs for family homes, holiday houses and small community spaces.',
-    pages: 'Pages', contact: 'Contact', follow: 'Follow',
+    pages: 'Pages', contact: 'Contact',
     legal: 'All rights reserved.', privacy: 'Privacy', top: 'Back to top',
   },
   cta: {
@@ -305,7 +303,7 @@ const en = {
     about: {
       eyebrow: 'About',
       h: 'Hi, <em>I’m Hanna.</em>',
-      p: ['I believe a garden is good when it grows out of the [[habits]] of the people who live in it – not out of a catalogue. That’s why every design starts with getting to know you: how your mornings go, where you drink your coffee, whether there needs to be room for bikes, the dog, the big family lunch.', 'As a landscape and garden engineer I keep the character of the site, climate-adaptive planting and long-term beauty in view at the same time. I want to give you a garden you’re never afraid to use.'],
+      p: ['I believe a garden is good when it grows out of the [[habits]] of the people who live in it – not out of a catalogue. That’s why every design starts with getting to know you: how your mornings go, where you drink your coffee, whether there needs to be room for bikes, the dog, the big family lunch.', 'As a landscape and garden engineer I keep the character of the site, climate-adaptive planting and long-term beauty in view at the same time. I want to give you a garden you’re never afraid to use.', 'I don’t design a show that lasts a few years, but a garden that keeps its value, character and beauty for decades. I believe a well-designed garden isn’t just decoration, but a place to unwind, recharge and reconnect with nature every day.'],
       link: 'More about me', portrait: 'Hanna Dóbiás, garden designer, at work with a garden plan in front of her',
     },
     faq: {
@@ -382,7 +380,7 @@ const en = {
     lead: 'Realistic visualisations showing proportions, materials and the mood of the garden before construction – at different times of day and in different seasons.',
     svg: { aria: 'Isometric garden model with house, terrace, pond, pergola and trees.', caption: 'AXONOMETRIC · LIGHT MODEL' },
     modes: ['Line drawing', 'Rendered'], seasons: ['Summer', 'Autumn', 'Winter'], modeL: 'View', seasonL: 'Season',
-    deliv: ['3D model of the plot and building', '4–6 key views in high resolution', 'Bird’s-eye overview image', 'Comparison of material and colour options', 'Seasonal or evening mood image on request', 'Images you can share with family and your contractor'],
+    deliv: ['3D model of the plot and building', '3–4 key views in high resolution', 'Bird’s-eye overview image', 'Comparison of material and colour options', 'Seasonal or evening mood image on request', 'Images you can share with family and your contractor'],
     who: ['It’s hard for you to picture space from a plan', 'Several people in the family decide and need a shared picture', 'You’re choosing between materials, paving or colours'],
     steps: [['Modelling', 'I build the 3D model from the finished concept.'], ['Views', 'Together we choose the most important viewpoints.'], ['Visuals', 'Finished images with materials, plants and light.']],
     special: {
@@ -390,7 +388,7 @@ const en = {
       h: 'From line <em>to mood.</em>',
       p: 'Switch the view and the season on the model above. Real visualisations are far more detailed – but the principle is the same: decide before you build.',
     },
-    faq: [['Do I need a concept plan first?', 'Yes, the visualisation builds on the finished concept – 3D is a tool for deciding, not the starting point.'], ['How many images do I get?', 'Typically 4–6 finished views, plus bird’s-eye and seasonal images on request.'], ['Do you make videos or walkthroughs?', 'A short fly-around animation is possible on request. I’ll list it separately in the quote.']],
+    faq: [['Do I need a concept plan first?', 'Yes, the visualisation builds on the finished concept – 3D is a tool for deciding, not the starting point.'], ['How many images do I get?', 'Typically 3–4 finished views, plus bird’s-eye and seasonal images on request.'], ['Do you make videos or walkthroughs?', 'A short fly-around animation is possible on request. I’ll list it separately in the quote.']],
   },
   about: {
     title: 'About Hanna Dóbiás | HoneyGarden garden design',

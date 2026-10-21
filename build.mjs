@@ -9,13 +9,15 @@ import { REGION_KEYS } from './src/regions.mjs';
 const ROOT = fileURLToPath(new URL('.', import.meta.url));
 const DEFS = S.DEFS_BASE.replace('</defs></svg>', S.BAND_DEF + '</defs></svg>');
 
+// Clean URLs: the files stay rolam.html etc., but links drop the extension (GitHub Pages serves /rolam from rolam.html).
+const slug = (lang, key) => (PAGES[key][lang] === 'index.html' ? '' : PAGES[key][lang].replace(/\.html$/, ''));
 const link = (lang, key, from = lang) => {
-  const file = PAGES[key][lang];
-  if (from === lang) return file;
-  return lang === 'en' ? `en/${file}` : `../${file}`;
+  const page = slug(lang, key);
+  if (from === lang) return page || './';
+  return lang === 'en' ? `en/${page}` : `../${page}`;
 };
 const asset = lang => (lang === 'en' ? '../assets/' : 'assets/');
-const url = (lang, key) => `${SITE.domain}/${lang === 'en' ? 'en/' : ''}${PAGES[key][lang] === 'index.html' ? '' : PAGES[key][lang]}`;
+const url = (lang, key) => `${SITE.domain}/${lang === 'en' ? 'en/' : ''}${slug(lang, key)}`;
 const pad = n => String(n).padStart(2, '0');
 // The address is long: let it break before the @ instead of forcing its column wider.
 const MAIL = SITE.email.replace('@', '<wbr>@');
@@ -26,12 +28,13 @@ const MAIL = SITE.email.replace('@', '<wbr>@');
 const GLYPH = {
   arrow: '<svg viewBox="0 0 24 24"><path d="M4 12 H19 M13 6 L19 12 L13 18"/></svg>',
   up: '<svg viewBox="0 0 24 24"><path d="M12 20 V5 M6 11 L12 5 L18 11"/></svg>',
+  down: '<svg viewBox="0 0 24 24"><path d="M12 4 V19 M6 13 L12 19 L18 13"/></svg>',
   plus: '<svg viewBox="0 0 24 24"><path d="M12 5 V19 M5 12 H19"/></svg>',
   mail: '<svg viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12"/><path d="M4 7 L12 13 L20 7"/></svg>',
   phone: '<svg viewBox="0 0 24 24"><path d="M6 4 H10 L11.5 8.5 L9 10 C10 12.5 11.5 14 14 15 L15.5 12.5 L20 14 V18 C20 19 19 20 18 20 C10 19.5 4.5 14 4 6 C4 5 5 4 6 4 Z"/></svg>',
 };
 // logo.png: black GARDEN for light grounds; logo-light.png: pale GARDEN for the dark footer.
-const brand = (t, cls = '', file = 'logo.png') => `<a class="brand ${cls}" href="${link(t.lang, 'home')}"><img class="brand__logo" src="${asset(t.lang)}img/${file}" alt="${SITE.name}" width="724" height="300"><span class="brand__sub">${t.brandSub}</span></a>`;
+const brand = (t, cls = '', file = 'logo.png') => `<a class="brand ${cls}" href="${link(t.lang, 'home')}"><img class="brand__logo" src="${asset(t.lang)}img/${file}" alt="${SITE.name}" width="699" height="300"><span class="brand__sub">${t.brandSub}</span></a>`;
 const ic = (g = 'arrow', cls = '') => `<span class="ic ${cls}" aria-hidden="true"><span class="ic__in">${GLYPH[g]}${GLYPH[g]}</span></span>`;
 const pm = '<span class="ic ic--pm" aria-hidden="true"><i></i><i></i></span>';
 const btn = (href, label, { cls = '', g = 'arrow', attrs = '' } = {}) =>
@@ -114,7 +117,6 @@ function footer(t) {
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.pages}</p><ul>${SERVICE_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t.services[k].title}</a></li>`).join('')}<li><a class="ulink" href="${L('about')}">${t.nav.about}</a></li><li><a class="ulink" href="${L('contact')}">${t.nav.cta}</a></li></ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.regionsUI.label}</p><ul>${REGION_KEYS.map(k => `<li><a class="ulink" href="${L(k)}">${t[k].name}</a></li>`).join('')}</ul></div>
     <div class="ftr__col"><p class="lbl"><i></i>${t.footer.contact}</p><ul><li><a class="ulink" href="tel:${SITE.phoneHref}">${SITE.phone}</a></li><li><a class="ulink" href="mailto:${SITE.email}">${MAIL}</a></li></ul></div>
-    <div class="ftr__col"><p class="lbl"><i></i>${t.footer.follow}</p><ul><li><a class="ulink" href="${SITE.instagram}" rel="noopener">Instagram</a></li><li><a class="ulink" href="${SITE.facebook}" rel="noopener">Facebook</a></li></ul></div>
   </div>
   <div class="wrap ftr__base mono"><span>© 2026 ${SITE.name} ${t.brandSub}. ${t.footer.legal}</span><a class="ftr__top" href="#top">${t.footer.top}${ic('up')}</a></div>
   <p class="ftr__giant" aria-hidden="true">${t.brandSub}</p>
@@ -132,7 +134,6 @@ const business = t => ({
   email: SITE.email, telephone: SITE.phone, knowsLanguage: ['hu', 'en'],
   description: t.home.desc,
   areaServed: REGION_KEYS.flatMap(k => t[k].schemaArea.map(([type, name]) => ({ '@type': type, name }))),
-  sameAs: [SITE.instagram, SITE.facebook],
 });
 const crumbs = (t, items) => ({ '@type': 'BreadcrumbList', itemListElement: items.map(([name, key], i) => ({ '@type': 'ListItem', position: i + 1, name: name.replace(/<[^>]+>/g, ''), item: url(t.lang, key) })) });
 const faqLd = items => ({ '@type': 'FAQPage', mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
@@ -227,19 +228,6 @@ function home(t) {
   </div>
 </section>
 
-<section class="bento-s" aria-label="${lab[1]}">
-  <div class="wrap bento">
-    <div class="bento__big" data-reveal>
-      ${S.PLUS4}
-      <p class="lbl"><i></i>${SITE.name} · ${t.brandSub}</p>
-      <h2 class="display">${h.bento.big}</h2>
-      <p class="bento__note">${h.bento.note}</p>
-      <svg class="bento__sym" viewBox="0 0 120 120" aria-hidden="true"><path class="ln-thin" d="${S.scallop(60, 60, 48, 16, 1.1)}"/><path class="ln-hair" d="${S.scallop(60, 60, 30, 11, 1.12)}"/><line class="ln-hair" x1="52" y1="60" x2="68" y2="60"/><line class="ln-hair" x1="60" y1="52" x2="60" y2="68"/></svg>
-    </div>
-    ${h.facts.map(([n, l], i) => `<div class="bento__c bento__c--${i}" data-reveal style="--d:${i * 70}ms"><span class="mono">[${pad(i + 1)}]</span><strong class="odo" data-odo="${n}">${n}</strong><span class="bento__l">${l}</span></div>`).join('')}
-  </div>
-</section>
-
 <div class="marquee" aria-hidden="true"><div class="marquee__track">${Array(2).fill(['Lavandula angustifolia', 'Hydrangea paniculata', 'Miscanthus sinensis', 'Salvia nemorosa', 'Acer palmatum', 'Echinacea purpurea', 'Hamamelis × intermedia', 'Taxus baccata', 'Allium ‘Purple Sensation’', 'Helleborus orientalis'].map(n => `<span>${n}</span>${S.LOGO}`).join('')).join('')}</div></div>
 ${S.band()}
 
@@ -249,6 +237,16 @@ ${S.band()}
     <h2 class="display staff" id="why-h">${h.whyLines.map((l, i) => `<span class="staff__l" style="--ind:${[0, 2, 5][i]};--d:${i * 120}ms" data-reveal><span>${l}</span></span>`).join('')}</h2>
     <p class="lead why__p" data-reveal>${h.why.p}</p>
     <ol class="rows">${h.why.items.map(([icn, ti, tx], i) => `<li class="row hov" data-reveal style="--d:${i * 70}ms"><span class="mono row__n">[${pad(i + 1)}]</span><h3 class="row__t">${ti}</h3><p class="row__p">${tx}</p><span class="row__ic">${S.ICON[icn]}</span></li>`).join('')}</ol>
+    <div class="bento why__bento">
+      <div class="bento__big" data-reveal>
+        ${S.PLUS4}
+        <p class="lbl"><i></i>${SITE.name} · ${t.brandSub}</p>
+        <h2 class="display">${h.bento.big}</h2>
+        <p class="bento__note">${h.bento.note}</p>
+        <svg class="bento__sym" viewBox="0 0 120 120" aria-hidden="true"><path class="ln-thin" d="${S.scallop(60, 60, 48, 16, 1.1)}"/><path class="ln-hair" d="${S.scallop(60, 60, 30, 11, 1.12)}"/><line class="ln-hair" x1="52" y1="60" x2="68" y2="60"/><line class="ln-hair" x1="60" y1="52" x2="60" y2="68"/></svg>
+      </div>
+      ${h.facts.map(([n, l], i) => `<div class="bento__c bento__c--${i}" data-reveal style="--d:${i * 70}ms"><span class="mono">[${pad(i + 1)}]</span><strong class="odo" data-odo="${n}">${n}</strong><span class="bento__l">${l}</span></div>`).join('')}
+    </div>
   </div>
 </section>
 
@@ -263,20 +261,9 @@ ${S.band()}
   </div>
 </section>
 
-<section class="svc sec" id="szolgaltatasok" aria-labelledby="svc-h">
-  <div class="wrap">
-    <div class="svc__top">
-      ${lbl(3, lab[2])}
-      <h2 class="display display--lg" id="svc-h" data-reveal>${h.servicesH}</h2>
-      <p class="lead" data-reveal>${h.servicesP}</p>
-    </div>
-    ${accordion(t)}
-  </div>
-</section>
-
 <section class="stage sec--dark" data-stage data-active="1" aria-labelledby="stage-h">
   <div class="wrap stage__head">
-    ${lbl(4, lab[1])}
+    ${lbl(3, lab[1])}
     <h2 class="display display--lg" id="stage-h" data-reveal>${h.stage.h}</h2>
     <p class="lead" data-reveal>${h.stage.p}</p>
   </div>
@@ -292,25 +279,37 @@ ${S.band()}
   </div>
 </section>
 
-${regionsBlock(t, null, 5, 'regiok')}
+${regionsBlock(t, null, 4, 'regiok')}
 
 <section class="about-t sec" aria-labelledby="about-h">
   <div class="wrap about-t__grid">
     <div class="about-t__l">
-      ${lbl(6, lab[4])}
+      ${lbl(5, lab[4])}
       <p class="body-l about-t__intro" data-reveal>${rich(h.about.p[0])}</p>
       <div class="about-t__art" data-reveal>${S.archPortrait(h.about.portrait, `${asset(t.lang)}img/hanna.jpg`)}</div>
     </div>
     <div class="about-t__r">
       <h2 class="display display--lg" id="about-h" data-reveal>${h.about.h}</h2>
       <p class="body-l" data-reveal>${h.about.p[1]}</p>
+      <p class="body-l" data-reveal>${h.about.p[2]}</p>
       <div data-reveal>${btn(L('about'), h.about.link, { cls: 'btn--ghost' })}</div>
       <dl class="tcard" data-reveal>${S.PLUS4}${t.card.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v === SITE.email ? MAIL : v}</dd></div>`).join('')}</dl>
     </div>
   </div>
 </section>
 
-${faq(t, 7, lab[5], h.faq.h, h.faq.items, 'gyik')}
+${faq(t, 6, lab[5], h.faq.h, h.faq.items, 'gyik')}
+
+<section class="svc sec" id="szolgaltatasok" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="svc__top">
+      ${lbl(7, lab[2])}
+      <h2 class="display display--lg" id="svc-h" data-reveal>${h.servicesH}</h2>
+      <p class="lead" data-reveal>${h.servicesP}</p>
+    </div>
+    ${accordion(t)}
+  </div>
+</section>
 `, { bodyClass: 'is-home', graph: [{ '@type': 'WebSite', '@id': `${SITE.domain}/#site`, url: `${SITE.domain}/`, name: SITE.name, inLanguage: t.lang, publisher: { '@id': BIZ_ID } }, faqLd(h.faq.items)] });
 }
 
@@ -390,10 +389,11 @@ function service(t, key) {
       <div class="shero__art"><div class="frame">${S.PLUS4}${heroArt(t, key)}</div></div>
     </div>
   </div>
+  <a class="scrolltip" href="#tovabb" data-scrolltip aria-label="${t.ui.scroll}">${ic('down')}</a>
 </section>
 ${S.band()}
 
-<section class="sec deliv">
+<section class="sec deliv" id="tovabb">
   <div class="wrap deliv__grid">
     <div class="deliv__l">
       ${lbl(1, sub.deliv)}

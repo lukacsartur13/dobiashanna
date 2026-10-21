@@ -1,7 +1,11 @@
 # HoneyGarden kerttervezés — Dóbiás Hanna (HU / EN)
 
-Statikus weboldal, nincs szükség szerverre vagy build-eszközre a megjelenítéshez:
-nyisd meg az `index.html`-t, vagy töltsd fel a mappát bármilyen tárhelyre.
+Statikus weboldal: https://honeygarden.hu — GitHub Pages szolgálja ki a `main` ágról
+(stratoswebdesign/dobiashanna, `CNAME` fájl, kötelező HTTPS; DNS a Rackhostnál).
+
+A linkek `.html` nélküliek (`/rolam`, `/en/about`); a fájlok neve marad `rolam.html` stb.
+Ezt a GitHub Pages kezeli, ezért helyben ne dupla kattintással nyisd meg, hanem
+a `.claude/serve.mjs` előnézeti szerverrel (az is így szolgálja ki az oldalakat).
 
 ## Szerkesztés
 
@@ -38,7 +42,7 @@ node build.mjs
 
 ## Élesítés előtt kitöltendő
 
-- `src/content.mjs` → `SITE`: Instagram és Facebook link (a név, a telefonszám, az e-mail és a domain már a végleges)
+- `src/content.mjs` → `SITE`: minden adat végleges. Instagram/Facebook egyelőre szándékosan nincs az oldalon (majd ha lesz elég kép)
 - A hero-fotó (`assets/img/kert-hero.jpg`) csak 1103 px széles; nagy kijelzőn egy legalább 2400 px-es változat élesebb lenne
 - Az átfutási idők a GYIK-ben (2–3 hét / 4–8 hét) minta-értékek
 - Adatkezelési tájékoztató oldal (az űrlap hivatkozik rá)
